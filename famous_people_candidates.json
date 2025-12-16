@@ -1,0 +1,3386 @@
+[
+  {
+    "id": "Q410",
+    "q_num": 410,
+    "name": "Carl Sagan",
+    "age": 62,
+    "description": "American astrophysicist, cosmologist, author and science educator",
+    "birth": "1934",
+    "death": "1996"
+  },
+  {
+    "id": "Q448",
+    "q_num": 448,
+    "name": "Denis Diderot",
+    "age": 71,
+    "description": "French Enlightenment philosopher and encyclop\u00e6dist",
+    "birth": "1713",
+    "death": "1784"
+  },
+  {
+    "id": "Q464",
+    "q_num": 464,
+    "name": "Philipp Ludwig von Seidel",
+    "age": 75,
+    "description": "German mathematician",
+    "birth": "1821",
+    "death": "1896"
+  },
+  {
+    "id": "Q529",
+    "q_num": 529,
+    "name": "Louis Pasteur",
+    "age": 73,
+    "description": "French chemist and microbiologist",
+    "birth": "1822",
+    "death": "1895"
+  },
+  {
+    "id": "Q562",
+    "q_num": 562,
+    "name": "Pierre Poivre",
+    "age": 67,
+    "description": "French horticulturalist (1719-1786)",
+    "birth": "1719",
+    "death": "1786"
+  },
+  {
+    "id": "Q619",
+    "q_num": 619,
+    "name": "Nicolaus Copernicus",
+    "age": 70,
+    "description": "Renaissance-era mathematician, astronomer, and clergyman who formulated the heliocentric model of the Universe",
+    "birth": "1473",
+    "death": "1543"
+  },
+  {
+    "id": "Q651",
+    "q_num": 651,
+    "name": "Friedrich Theodor Vischer",
+    "age": 80,
+    "description": "German philosopher, writer and politician (1807-1887)",
+    "birth": "1807",
+    "death": "1887"
+  },
+  {
+    "id": "Q675",
+    "q_num": 675,
+    "name": "Andr\u00e9-Marie Amp\u00e8re",
+    "age": 61,
+    "description": "French physicist and mathematician",
+    "birth": "1775",
+    "death": "1836"
+  },
+  {
+    "id": "Q680",
+    "q_num": 680,
+    "name": "Alessandro Volta",
+    "age": 82,
+    "description": "Italian physicist, chemist, and pioneer of electricity and power",
+    "birth": "1745",
+    "death": "1827"
+  },
+  {
+    "id": "Q742",
+    "q_num": 742,
+    "name": "Jean Racine",
+    "age": 60,
+    "description": "French dramatist",
+    "birth": "1639",
+    "death": "1699"
+  },
+  {
+    "id": "Q762",
+    "q_num": 762,
+    "name": "Leonardo da Vinci",
+    "age": 67,
+    "description": "Italian Renaissance polymath (1452-1519)",
+    "birth": "1452",
+    "death": "1519"
+  },
+  {
+    "id": "Q892",
+    "q_num": 892,
+    "name": "J.\u00a0R.\u00a0R. Tolkien",
+    "age": 81,
+    "description": "British philologist and author of classic high fantasy works",
+    "birth": "1892",
+    "death": "1973"
+  },
+  {
+    "id": "Q909",
+    "q_num": 909,
+    "name": "Jorge Luis Borges",
+    "age": 87,
+    "description": "Argentine short story writer, essayist, poet and translator (1899-1986)",
+    "birth": "1899",
+    "death": "1986"
+  },
+  {
+    "id": "Q926",
+    "q_num": 926,
+    "name": "Roald Amundsen",
+    "age": 56,
+    "description": "Norwegian explorer; first person to reach the South Pole",
+    "birth": "1872",
+    "death": "1928"
+  },
+  {
+    "id": "Q935",
+    "q_num": 935,
+    "name": "Isaac Newton",
+    "age": 85,
+    "description": "British physicist and mathematician",
+    "birth": "1642",
+    "death": "1727"
+  },
+  {
+    "id": "Q937",
+    "q_num": 937,
+    "name": "Albert Einstein",
+    "age": 76,
+    "description": "German-born theoretical physicist; developer of the theory of relativity (1879\u20131955)",
+    "birth": "1879",
+    "death": "1955"
+  },
+  {
+    "id": "Q949",
+    "q_num": 949,
+    "name": "John Bardeen",
+    "age": 83,
+    "description": "American physicist and engineer",
+    "birth": "1908",
+    "death": "1991"
+  },
+  {
+    "id": "Q989",
+    "q_num": 989,
+    "name": "John Paul II",
+    "age": 85,
+    "description": "264th pope of the Catholic Church",
+    "birth": "1920",
+    "death": "2005"
+  },
+  {
+    "id": "Q997",
+    "q_num": 997,
+    "name": "Andrei Sakharov",
+    "age": 68,
+    "description": "Soviet nuclear physicist and human rights activist",
+    "birth": "1921",
+    "death": "1989"
+  },
+  {
+    "id": "Q1035",
+    "q_num": 1035,
+    "name": "Charles Darwin",
+    "age": 73,
+    "description": "British naturalist, author of \"On the origin of species, by means of natural selection\" (1809-1882)",
+    "birth": "1809",
+    "death": "1882"
+  },
+  {
+    "id": "Q1043",
+    "q_num": 1043,
+    "name": "Carl Linnaeus",
+    "age": 71,
+    "description": "Swedish botanist, physician, and zoologist (1707-1778)",
+    "birth": "1707",
+    "death": "1778"
+  },
+  {
+    "id": "Q1051",
+    "q_num": 1051,
+    "name": "Ivan Regen",
+    "age": 79,
+    "description": "Slovenian biologist",
+    "birth": "1868",
+    "death": "1947"
+  },
+  {
+    "id": "Q1242",
+    "q_num": 1242,
+    "name": "Luigi Einaudi",
+    "age": 87,
+    "description": "2nd President of Italy (1874-1961)",
+    "birth": "1874",
+    "death": "1961"
+  },
+  {
+    "id": "Q1290",
+    "q_num": 1290,
+    "name": "Blaise Pascal",
+    "age": 39,
+    "description": "French mathematician, physicist, inventor, writer, and Christian philosopher",
+    "birth": "1623",
+    "death": "1662"
+  },
+  {
+    "id": "Q1323",
+    "q_num": 1323,
+    "name": "Domingo Santa Mar\u00eda",
+    "age": 64,
+    "description": "Chilean politician and President (1825-1889)",
+    "birth": "1825",
+    "death": "1889"
+  },
+  {
+    "id": "Q1325",
+    "q_num": 1325,
+    "name": "Friedrich Hayek",
+    "age": 93,
+    "description": "Austrian and British economist",
+    "birth": "1899",
+    "death": "1992"
+  },
+  {
+    "id": "Q1399",
+    "q_num": 1399,
+    "name": "Niccol\u00f2 Machiavelli",
+    "age": 58,
+    "description": "Italian politician, writer and author (1469-1527)",
+    "birth": "1469",
+    "death": "1527"
+  },
+  {
+    "id": "Q1500",
+    "q_num": 1500,
+    "name": "Jos\u00e9 Rizal",
+    "age": 35,
+    "description": "Filipino writer, nationalist; National Hero of the Philippines (1861-1896)",
+    "birth": "1861",
+    "death": "1896"
+  },
+  {
+    "id": "Q1585",
+    "q_num": 1585,
+    "name": "Georg Simon Ohm",
+    "age": 65,
+    "description": "hola solo quiero coger con una mujer",
+    "birth": "1789",
+    "death": "1854"
+  },
+  {
+    "id": "Q1589",
+    "q_num": 1589,
+    "name": "Luigi Galvani",
+    "age": 61,
+    "description": "Italian physician, physicist, and philosopher",
+    "birth": "1737",
+    "death": "1798"
+  },
+  {
+    "id": "Q1868",
+    "q_num": 1868,
+    "name": "Paul Otlet",
+    "age": 76,
+    "description": "Belgian author, librarian and colonial thinker",
+    "birth": "1868",
+    "death": "1944"
+  },
+  {
+    "id": "Q2022",
+    "q_num": 2022,
+    "name": "Cesare Pavese",
+    "age": 42,
+    "description": "Italian poet, novelist, literary critic, and translator",
+    "birth": "1908",
+    "death": "1950"
+  },
+  {
+    "id": "Q2518",
+    "q_num": 2518,
+    "name": "Helmut Kohl",
+    "age": 87,
+    "description": "Chancellor of West Germany and reunified Germany (1930\u20132017)",
+    "birth": "1930",
+    "death": "2017"
+  },
+  {
+    "id": "Q3095",
+    "q_num": 3095,
+    "name": "Livia Ana T\u0103taru",
+    "age": 91,
+    "description": "German linguist",
+    "birth": "1927",
+    "death": "2018"
+  },
+  {
+    "id": "Q4014",
+    "q_num": 4014,
+    "name": "George Zorab",
+    "age": 92,
+    "description": "Dutch parapsychologist",
+    "birth": "1898",
+    "death": "1990"
+  },
+  {
+    "id": "Q4128",
+    "q_num": 4128,
+    "name": "Louis Aragon",
+    "age": 85,
+    "description": "French poet, novelist and editor (1897-1982)",
+    "birth": "1897",
+    "death": "1982"
+  },
+  {
+    "id": "Q4267",
+    "q_num": 4267,
+    "name": "Ad\u00e9mar de Chabannes",
+    "age": 45,
+    "description": "French monk, historian, musical composer and successful literary forger",
+    "birth": "989",
+    "death": "1034"
+  },
+  {
+    "id": "Q4289",
+    "q_num": 4289,
+    "name": "Guibert of Nogent",
+    "age": 69,
+    "description": "Benedictine historian, theologian and author of autobiographies (c. 1055\u20131124)",
+    "birth": "1055",
+    "death": "1124"
+  },
+  {
+    "id": "Q4295",
+    "q_num": 4295,
+    "name": "Peter Abelard",
+    "age": 63,
+    "description": "French scholastic philosopher, theologian and preeminent logician (c.1079-1142)",
+    "birth": "1079",
+    "death": "1142"
+  },
+  {
+    "id": "Q4323",
+    "q_num": 4323,
+    "name": "Albert of Aix",
+    "age": 60,
+    "description": "historian of the First Crusade",
+    "birth": "1060",
+    "death": "1120"
+  },
+  {
+    "id": "Q4381",
+    "q_num": 4381,
+    "name": "Carlos Pellicer",
+    "age": 78,
+    "description": "modernist Mexican poet",
+    "birth": "1899",
+    "death": "1977"
+  },
+  {
+    "id": "Q4452",
+    "q_num": 4452,
+    "name": "Thomas of Metsoph",
+    "age": 68,
+    "description": "Armenian cleric and chronicler",
+    "birth": "1378",
+    "death": "1446"
+  },
+  {
+    "id": "Q4517",
+    "q_num": 4517,
+    "name": "Bernard Katz",
+    "age": 92,
+    "description": "German-born British biophysicist",
+    "birth": "1911",
+    "death": "2003"
+  },
+  {
+    "id": "Q4695",
+    "q_num": 4695,
+    "name": "Jean-Jacques Kieffer",
+    "age": 68,
+    "description": "French naturalist and entomologist (1857-1925)",
+    "birth": "1857",
+    "death": "1925"
+  },
+  {
+    "id": "Q4786",
+    "q_num": 4786,
+    "name": "Marie-Jean-L\u00e9on d'Hervey de Saint Denys",
+    "age": 70,
+    "description": "French sinologist",
+    "birth": "1822",
+    "death": "1892"
+  },
+  {
+    "id": "Q5208",
+    "q_num": 5208,
+    "name": "Huang Xianfan",
+    "age": 83,
+    "description": "Chinese historian, ethnologist and educator (1899-1982)",
+    "birth": "1899",
+    "death": "1982"
+  },
+  {
+    "id": "Q5327",
+    "q_num": 5327,
+    "name": "Adolf Butenandt",
+    "age": 92,
+    "description": "German biochemist (1939 Nobel Prize)",
+    "birth": "1903",
+    "death": "1995"
+  },
+  {
+    "id": "Q5333",
+    "q_num": 5333,
+    "name": "Charles Lyell",
+    "age": 78,
+    "description": "British lawyer and geologist",
+    "birth": "1797",
+    "death": "1875"
+  },
+  {
+    "id": "Q5347",
+    "q_num": 5347,
+    "name": "Franc Guben\u0161ek",
+    "age": 73,
+    "description": "Slovene biochemist",
+    "birth": "1937",
+    "death": "2010"
+  },
+  {
+    "id": "Q5348",
+    "q_num": 5348,
+    "name": "Jovan Had\u017ei",
+    "age": 88,
+    "description": "Slovene zoologist of Serbian descent",
+    "birth": "1884",
+    "death": "1972"
+  },
+  {
+    "id": "Q5349",
+    "q_num": 5349,
+    "name": "Fran Jesenko",
+    "age": 57,
+    "description": "Slovene botanist and geneticist (1875-1932)",
+    "birth": "1875",
+    "death": "1932"
+  },
+  {
+    "id": "Q5352",
+    "q_num": 5352,
+    "name": "Ernest Mayer",
+    "age": 89,
+    "description": "Slovene botanist (1920-2009)",
+    "birth": "1920",
+    "death": "2009"
+  },
+  {
+    "id": "Q5361",
+    "q_num": 5361,
+    "name": "Geoffrey of Villehardouin",
+    "age": 60,
+    "description": "knight and historian",
+    "birth": "1150",
+    "death": "1210"
+  },
+  {
+    "id": "Q5364",
+    "q_num": 5364,
+    "name": "Anton Polenec",
+    "age": 90,
+    "description": "Slovene zoologist",
+    "birth": "1910",
+    "death": "2000"
+  },
+  {
+    "id": "Q5376",
+    "q_num": 5376,
+    "name": "Robert the Monk",
+    "age": 32,
+    "description": "chronicler of the First Crusade",
+    "birth": "1090",
+    "death": "1122"
+  },
+  {
+    "id": "Q5382",
+    "q_num": 5382,
+    "name": "Wace",
+    "age": 74,
+    "description": "Norman writer from Jersey",
+    "birth": "1100",
+    "death": "1174"
+  },
+  {
+    "id": "Q5458",
+    "q_num": 5458,
+    "name": "Rudolf Feustel",
+    "age": 93,
+    "description": "German archaeologist",
+    "birth": "1925",
+    "death": "2018"
+  },
+  {
+    "id": "Q5580",
+    "q_num": 5580,
+    "name": "Albrecht D\u00fcrer",
+    "age": 57,
+    "description": "German painter, printmaker, mathematician, and theorist",
+    "birth": "1471",
+    "death": "1528"
+  },
+  {
+    "id": "Q5585",
+    "q_num": 5585,
+    "name": "Giovanni Giocondo",
+    "age": 82,
+    "description": "Italian friar, architect, antiquary, archaeologist, and classical scholar",
+    "birth": "1433",
+    "death": "1515"
+  },
+  {
+    "id": "Q5626",
+    "q_num": 5626,
+    "name": "Odo of Deuil",
+    "age": 52,
+    "description": "historian and participant of the Second Crusade",
+    "birth": "1110",
+    "death": "1162"
+  },
+  {
+    "id": "Q5630",
+    "q_num": 5630,
+    "name": "Fulcher of Chartres",
+    "age": 68,
+    "description": "chronicler of the First Crusade",
+    "birth": "1059",
+    "death": "1127"
+  },
+  {
+    "id": "Q5661",
+    "q_num": 5661,
+    "name": "Lambert of Ardres",
+    "age": 67,
+    "description": "French twelfth century chronicler",
+    "birth": "1160",
+    "death": "1227"
+  },
+  {
+    "id": "Q5683",
+    "q_num": 5683,
+    "name": "Geoffrey Chaucer",
+    "age": 57,
+    "description": "14th century English poet and author",
+    "birth": "1343",
+    "death": "1400"
+  },
+  {
+    "id": "Q5738",
+    "q_num": 5738,
+    "name": "Adolphe Thiers",
+    "age": 80,
+    "description": "President of the French Republic (1797-1877)",
+    "birth": "1797",
+    "death": "1877"
+  },
+  {
+    "id": "Q5752",
+    "q_num": 5752,
+    "name": "Peter Kropotkin",
+    "age": 79,
+    "description": "Russian zoologist, evolutionary theorist, philosopher, scientist, revolutionary, economist, activist, geographer, writer (1842-1921)",
+    "birth": "1842",
+    "death": "1921"
+  },
+  {
+    "id": "Q5822",
+    "q_num": 5822,
+    "name": "Piero della Francesca",
+    "age": 77,
+    "description": "Italian painter (c. 1416-1492)",
+    "birth": "1415",
+    "death": "1492"
+  },
+  {
+    "id": "Q5879",
+    "q_num": 5879,
+    "name": "Johann Wolfgang von Goethe",
+    "age": 83,
+    "description": "German writer, artist, natural scientist and politician (1749\u20131832)",
+    "birth": "1749",
+    "death": "1832"
+  },
+  {
+    "id": "Q6353",
+    "q_num": 6353,
+    "name": "Gerardus Mercator",
+    "age": 82,
+    "description": "Dutch cartographer, philosopher and mathematician",
+    "birth": "1512",
+    "death": "1594"
+  },
+  {
+    "id": "Q6527",
+    "q_num": 6527,
+    "name": "Jean-Jacques Rousseau",
+    "age": 66,
+    "description": "Genevan philosopher, writer, and composer (1712-1778)",
+    "birth": "1712",
+    "death": "1778"
+  },
+  {
+    "id": "Q6694",
+    "q_num": 6694,
+    "name": "Alexander von Humboldt",
+    "age": 90,
+    "description": "Prussian geographer, naturalist and explorer (1769-1859)",
+    "birth": "1769",
+    "death": "1859"
+  },
+  {
+    "id": "Q6701",
+    "q_num": 6701,
+    "name": "Jacob Grimm",
+    "age": 78,
+    "description": "German philologist, linguist, jurist and mythologist (1785-1863)",
+    "birth": "1785",
+    "death": "1863"
+  },
+  {
+    "id": "Q6714",
+    "q_num": 6714,
+    "name": "Wilhelm Grimm",
+    "age": 73,
+    "description": "German author",
+    "birth": "1786",
+    "death": "1859"
+  },
+  {
+    "id": "Q6722",
+    "q_num": 6722,
+    "name": "Carl Friedrich Gauss",
+    "age": 78,
+    "description": "German mathematician and physicist",
+    "birth": "1777",
+    "death": "1855"
+  },
+  {
+    "id": "Q6733",
+    "q_num": 6733,
+    "name": "Edward Teller",
+    "age": 95,
+    "description": "Hungarian-American nuclear physicist",
+    "birth": "1908",
+    "death": "2003"
+  },
+  {
+    "id": "Q7091",
+    "q_num": 7091,
+    "name": "\u00c9variste Galois",
+    "age": 21,
+    "description": "French mathematician",
+    "birth": "1811",
+    "death": "1832"
+  },
+  {
+    "id": "Q7099",
+    "q_num": 7099,
+    "name": "Emmy Noether",
+    "age": 53,
+    "description": "German mathematician",
+    "birth": "1882",
+    "death": "1935"
+  },
+  {
+    "id": "Q7103",
+    "q_num": 7103,
+    "name": "Sophie Germain",
+    "age": 55,
+    "description": "French mathematician, physicist, and philosopher",
+    "birth": "1776",
+    "death": "1831"
+  },
+  {
+    "id": "Q7104",
+    "q_num": 7104,
+    "name": "Baron d'Holbach",
+    "age": 66,
+    "description": "French-German author, philosopher, encyclopedist",
+    "birth": "1723",
+    "death": "1789"
+  },
+  {
+    "id": "Q7186",
+    "q_num": 7186,
+    "name": "Marie Curie",
+    "age": 67,
+    "description": "Polish-French physicist and chemist (1867-1934)",
+    "birth": "1867",
+    "death": "1934"
+  },
+  {
+    "id": "Q7200",
+    "q_num": 7200,
+    "name": "Alexander Pushkin",
+    "age": 38,
+    "description": "Russian poet",
+    "birth": "1799",
+    "death": "1837"
+  },
+  {
+    "id": "Q7201",
+    "q_num": 7201,
+    "name": "Dorothy M. Needham",
+    "age": 91,
+    "description": "English biochemist",
+    "birth": "1896",
+    "death": "1987"
+  },
+  {
+    "id": "Q7229",
+    "q_num": 7229,
+    "name": "Marie-Anne Paulze Lavoisier",
+    "age": 78,
+    "description": "French chemist and painter (1758-1836)",
+    "birth": "1758",
+    "death": "1836"
+  },
+  {
+    "id": "Q7236",
+    "q_num": 7236,
+    "name": "Lucy Weston Pickett",
+    "age": 93,
+    "description": "American chemist (1904-1997)",
+    "birth": "1904",
+    "death": "1997"
+  },
+  {
+    "id": "Q7249",
+    "q_num": 7249,
+    "name": "Agnes Pockels",
+    "age": 73,
+    "description": "German chemist pioneer in surface science",
+    "birth": "1862",
+    "death": "1935"
+  },
+  {
+    "id": "Q7251",
+    "q_num": 7251,
+    "name": "Alan Turing",
+    "age": 42,
+    "description": "British mathematician, logician, cryptanalyst, and computer scientist",
+    "birth": "1912",
+    "death": "1954"
+  },
+  {
+    "id": "Q7259",
+    "q_num": 7259,
+    "name": "Ada Lovelace",
+    "age": 37,
+    "description": "English mathematician, considered the first computer programmer",
+    "birth": "1815",
+    "death": "1852"
+  },
+  {
+    "id": "Q7267",
+    "q_num": 7267,
+    "name": "Hazel Alden Reason",
+    "age": 75,
+    "description": "British chemist and educator",
+    "birth": "1901",
+    "death": "1976"
+  },
+  {
+    "id": "Q7273",
+    "q_num": 7273,
+    "name": "Ellen Swallow Richards",
+    "age": 69,
+    "description": "American chemist",
+    "birth": "1842",
+    "death": "1911"
+  },
+  {
+    "id": "Q7286",
+    "q_num": 7286,
+    "name": "\u00c9milie du Ch\u00e2telet",
+    "age": 43,
+    "description": "French mathematician, physicist, and author",
+    "birth": "1706",
+    "death": "1749"
+  },
+  {
+    "id": "Q7287",
+    "q_num": 7287,
+    "name": "Ruby Hirose",
+    "age": 56,
+    "description": "American biochemist and bacteriologist",
+    "birth": "1904",
+    "death": "1960"
+  },
+  {
+    "id": "Q7298",
+    "q_num": 7298,
+    "name": "Anton\u00edn Dvo\u0159\u00e1k",
+    "age": 63,
+    "description": "Czech composer (1841-1904)",
+    "birth": "1841",
+    "death": "1904"
+  },
+  {
+    "id": "Q7306",
+    "q_num": 7306,
+    "name": "Patsy O'Connell Sherman",
+    "age": 78,
+    "description": "American chemist",
+    "birth": "1930",
+    "death": "2008"
+  },
+  {
+    "id": "Q7406",
+    "q_num": 7406,
+    "name": "Kamala Sohonie",
+    "age": 86,
+    "description": "Indian biochemist. First Indian woman to get her Ph.D in a scientific discipline",
+    "birth": "1912",
+    "death": "1998"
+  },
+  {
+    "id": "Q7409",
+    "q_num": 7409,
+    "name": "Hertha Sponer",
+    "age": 73,
+    "description": "German physicist and chemist",
+    "birth": "1895",
+    "death": "1968"
+  },
+  {
+    "id": "Q7410",
+    "q_num": 7410,
+    "name": "Anna Sundstr\u00f6m",
+    "age": 86,
+    "description": "First woman chemist in Sweden",
+    "birth": "1785",
+    "death": "1871"
+  },
+  {
+    "id": "Q7415",
+    "q_num": 7415,
+    "name": "M\u00e1ria Telkes",
+    "age": 95,
+    "description": "Hungarian\u2013American scientist and inventor",
+    "birth": "1900",
+    "death": "1995"
+  },
+  {
+    "id": "Q7416",
+    "q_num": 7416,
+    "name": "Margaret Thatcher",
+    "age": 88,
+    "description": "British stateswoman and prime minister (1925\u20132013)",
+    "birth": "1925",
+    "death": "2013"
+  },
+  {
+    "id": "Q7423",
+    "q_num": 7423,
+    "name": "Karen Wetterhahn",
+    "age": 49,
+    "description": "American chemist",
+    "birth": "1948",
+    "death": "1997"
+  },
+  {
+    "id": "Q7429",
+    "q_num": 7429,
+    "name": "Nina Andreyeva",
+    "age": 82,
+    "description": "Russian chemist, teacher, author, political activist, and social critic (1938-2020)",
+    "birth": "1938",
+    "death": "2020"
+  },
+  {
+    "id": "Q7433",
+    "q_num": 7433,
+    "name": "Myrtle Bachelder",
+    "age": 89,
+    "description": "American chemist and Women's Army Corps officer",
+    "birth": "1908",
+    "death": "1997"
+  },
+  {
+    "id": "Q7440",
+    "q_num": 7440,
+    "name": "Ruth R. Benerito",
+    "age": 97,
+    "description": "American scientist and inventor",
+    "birth": "1916",
+    "death": "2013"
+  },
+  {
+    "id": "Q7444",
+    "q_num": 7444,
+    "name": "Hazel Bishop",
+    "age": 92,
+    "description": "American chemist and cosmetics company founder",
+    "birth": "1906",
+    "death": "1998"
+  },
+  {
+    "id": "Q7445",
+    "q_num": 7445,
+    "name": "Lucy Everest Boole",
+    "age": 42,
+    "description": "Irish chemist and pharmacist (1862-1904)",
+    "birth": "1862",
+    "death": "1904"
+  },
+  {
+    "id": "Q7446",
+    "q_num": 7446,
+    "name": "Rachel Fuller Brown",
+    "age": 82,
+    "description": "American chemist",
+    "birth": "1898",
+    "death": "1980"
+  },
+  {
+    "id": "Q7447",
+    "q_num": 7447,
+    "name": "Emma P. Carr",
+    "age": 92,
+    "description": "American spectroscopist and chemical educator",
+    "birth": "1880",
+    "death": "1972"
+  },
+  {
+    "id": "Q7450",
+    "q_num": 7450,
+    "name": "Asima Chatterjee",
+    "age": 89,
+    "description": "Indian chemist (1917-2006)",
+    "birth": "1917",
+    "death": "2006"
+  },
+  {
+    "id": "Q7465",
+    "q_num": 7465,
+    "name": "Mildred Cohn",
+    "age": 96,
+    "description": "American biochemist",
+    "birth": "1913",
+    "death": "2009"
+  },
+  {
+    "id": "Q7470",
+    "q_num": 7470,
+    "name": "Mary Peters Fieser",
+    "age": 88,
+    "description": "American chemist",
+    "birth": "1909",
+    "death": "1997"
+  },
+  {
+    "id": "Q7474",
+    "q_num": 7474,
+    "name": "Rosalind Franklin",
+    "age": 38,
+    "description": "British chemist, biophysicist, and X-ray crystallographer",
+    "birth": "1920",
+    "death": "1958"
+  },
+  {
+    "id": "Q7478",
+    "q_num": 7478,
+    "name": "Elizabeth Fulhame",
+    "age": 30,
+    "description": "Scottish chemist",
+    "birth": "1760",
+    "death": "1790"
+  },
+  {
+    "id": "Q7480",
+    "q_num": 7480,
+    "name": "Louise Giblin",
+    "age": 78,
+    "description": "American chemist",
+    "birth": "1895",
+    "death": "1973"
+  },
+  {
+    "id": "Q7481",
+    "q_num": 7481,
+    "name": "Mary L. Good",
+    "age": 88,
+    "description": "American chemist",
+    "birth": "1931",
+    "death": "2019"
+  },
+  {
+    "id": "Q7482",
+    "q_num": 7482,
+    "name": "Louise Hammarstr\u00f6m",
+    "age": 68,
+    "description": "Swedish chemist",
+    "birth": "1849",
+    "death": "1917"
+  },
+  {
+    "id": "Q7485",
+    "q_num": 7485,
+    "name": "Anna J. Harrison",
+    "age": 86,
+    "description": "American organic chemist",
+    "birth": "1912",
+    "death": "1998"
+  },
+  {
+    "id": "Q7487",
+    "q_num": 7487,
+    "name": "Dorothy Hodgkin",
+    "age": 84,
+    "description": "British chemist",
+    "birth": "1910",
+    "death": "1994"
+  },
+  {
+    "id": "Q7490",
+    "q_num": 7490,
+    "name": "Clara Immerwahr",
+    "age": 45,
+    "description": "German chemist",
+    "birth": "1870",
+    "death": "1915"
+  },
+  {
+    "id": "Q7491",
+    "q_num": 7491,
+    "name": "Jane Stafford",
+    "age": 92,
+    "description": "American medical writer and chemist",
+    "birth": "1899",
+    "death": "1991"
+  },
+  {
+    "id": "Q7504",
+    "q_num": 7504,
+    "name": "Ir\u00e8ne Joliot-Curie",
+    "age": 59,
+    "description": "French scientist (1897-1956)",
+    "birth": "1897",
+    "death": "1956"
+  },
+  {
+    "id": "Q7506",
+    "q_num": 7506,
+    "name": "Joyce Jacobson Kaufman",
+    "age": 87,
+    "description": "Jewish American chemist",
+    "birth": "1929",
+    "death": "2016"
+  },
+  {
+    "id": "Q7509",
+    "q_num": 7509,
+    "name": "Stephanie L. Kwolek",
+    "age": 91,
+    "description": "American chemist; invented Kevlar",
+    "birth": "1923",
+    "death": "2014"
+  },
+  {
+    "id": "Q7513",
+    "q_num": 7513,
+    "name": "Kathleen Lonsdale",
+    "age": 68,
+    "description": "Irish crystallographer",
+    "birth": "1903",
+    "death": "1971"
+  },
+  {
+    "id": "Q7515",
+    "q_num": 7515,
+    "name": "Maud Menten",
+    "age": 81,
+    "description": "Canadian physician and chemist",
+    "birth": "1879",
+    "death": "1960"
+  },
+  {
+    "id": "Q7541",
+    "q_num": 7541,
+    "name": "Sally Floyd",
+    "age": 69,
+    "description": "American computer scientist",
+    "birth": "1950",
+    "death": "2019"
+  },
+  {
+    "id": "Q7555",
+    "q_num": 7555,
+    "name": "Jude Milhon",
+    "age": 64,
+    "description": "American hacker & author",
+    "birth": "1939",
+    "death": "2003"
+  },
+  {
+    "id": "Q7563",
+    "q_num": 7563,
+    "name": "Joyce K. Reynolds",
+    "age": 65,
+    "description": "American computer scientist",
+    "birth": "1950",
+    "death": "2015"
+  },
+  {
+    "id": "Q7604",
+    "q_num": 7604,
+    "name": "Leonhard Euler",
+    "age": 76,
+    "description": "Swiss mathematician",
+    "birth": "1707",
+    "death": "1783"
+  },
+  {
+    "id": "Q7729",
+    "q_num": 7729,
+    "name": "Louis Bonaparte",
+    "age": 68,
+    "description": "King of Holland, brother of Napoleon Bonaparte, member of the House of Buonaparte (1778-1846)",
+    "birth": "1778",
+    "death": "1846"
+  },
+  {
+    "id": "Q8016",
+    "q_num": 8016,
+    "name": "Winston Churchill",
+    "age": 91,
+    "description": "British statesman, army officer, and writer (1874\u20131965)",
+    "birth": "1874",
+    "death": "1965"
+  },
+  {
+    "id": "Q8018",
+    "q_num": 8018,
+    "name": "Augustine of Hippo",
+    "age": 76,
+    "description": "early Christian theologian, philosopher and Church Father",
+    "birth": "354",
+    "death": "430"
+  },
+  {
+    "id": "Q8287",
+    "q_num": 8287,
+    "name": "Elmer Gethin Rees",
+    "age": 78,
+    "description": "Welsh Mathematician",
+    "birth": "1941",
+    "death": "2019"
+  },
+  {
+    "id": "Q8556",
+    "q_num": 8556,
+    "name": "Edsger W. Dijkstra",
+    "age": 72,
+    "description": "Dutch computer scientist",
+    "birth": "1930",
+    "death": "2002"
+  },
+  {
+    "id": "Q8743",
+    "q_num": 8743,
+    "name": "Thomas Alva Edison",
+    "age": 84,
+    "description": "American inventor and businessman",
+    "birth": "1847",
+    "death": "1931"
+  },
+  {
+    "id": "Q8750",
+    "q_num": 8750,
+    "name": "Michael Faraday",
+    "age": 76,
+    "description": "English scientist (1791-1867)",
+    "birth": "1791",
+    "death": "1867"
+  },
+  {
+    "id": "Q8753",
+    "q_num": 8753,
+    "name": "Enrico Fermi",
+    "age": 53,
+    "description": "Italian physicist",
+    "birth": "1901",
+    "death": "1954"
+  },
+  {
+    "id": "Q8755",
+    "q_num": 8755,
+    "name": "Colin Maclaurin",
+    "age": 48,
+    "description": "Scottish mathematician",
+    "birth": "1698",
+    "death": "1746"
+  },
+  {
+    "id": "Q8763",
+    "q_num": 8763,
+    "name": "Fibonacci",
+    "age": 70,
+    "description": "Italian mathematician (c. 1175)",
+    "birth": "1170",
+    "death": "1240"
+  },
+  {
+    "id": "Q8772",
+    "q_num": 8772,
+    "name": "Joseph Fourier",
+    "age": 62,
+    "description": "French mathematician and physicist (1768 \u2013 1830)",
+    "birth": "1768",
+    "death": "1830"
+  },
+  {
+    "id": "Q8814",
+    "q_num": 8814,
+    "name": "Augustin-Louis Cauchy",
+    "age": 68,
+    "description": "French mathematician (1789\u20131857)",
+    "birth": "1789",
+    "death": "1857"
+  },
+  {
+    "id": "Q8962",
+    "q_num": 8962,
+    "name": "James Prescott Joule",
+    "age": 71,
+    "description": "English physicist and brewer",
+    "birth": "1818",
+    "death": "1889"
+  },
+  {
+    "id": "Q8963",
+    "q_num": 8963,
+    "name": "Johannes Kepler",
+    "age": 59,
+    "description": "German mathematician, astronomer and astrologer",
+    "birth": "1571",
+    "death": "1630"
+  },
+  {
+    "id": "Q9021",
+    "q_num": 9021,
+    "name": "Max Planck",
+    "age": 89,
+    "description": "German theoretical physicist",
+    "birth": "1858",
+    "death": "1947"
+  },
+  {
+    "id": "Q9036",
+    "q_num": 9036,
+    "name": "Nikola Tesla",
+    "age": 87,
+    "description": "Serbian-American inventor",
+    "birth": "1856",
+    "death": "1943"
+  },
+  {
+    "id": "Q9041",
+    "q_num": 9041,
+    "name": "James Watt",
+    "age": 83,
+    "description": "British engineer (1736\u20131819)",
+    "birth": "1736",
+    "death": "1819"
+  },
+  {
+    "id": "Q9047",
+    "q_num": 9047,
+    "name": "Gottfried Wilhelm Leibniz",
+    "age": 70,
+    "description": "German mathematician and philosopher",
+    "birth": "1646",
+    "death": "1716"
+  },
+  {
+    "id": "Q9061",
+    "q_num": 9061,
+    "name": "Karl Marx",
+    "age": 65,
+    "description": "German philosopher, economist, sociologist, journalist and revolutionary socialist (1818-1883)",
+    "birth": "1818",
+    "death": "1883"
+  },
+  {
+    "id": "Q9095",
+    "q_num": 9095,
+    "name": "James Clerk Maxwell",
+    "age": 48,
+    "description": "Scottish physicist and mathematician",
+    "birth": "1831",
+    "death": "1879"
+  },
+  {
+    "id": "Q9099",
+    "q_num": 9099,
+    "name": "Tabar\u00e9 V\u00e1zquez",
+    "age": 80,
+    "description": "President of Uruguay (2005-2010, 2015-2020)",
+    "birth": "1940",
+    "death": "2020"
+  },
+  {
+    "id": "Q9106",
+    "q_num": 9106,
+    "name": "Dmitri Mendeleev",
+    "age": 73,
+    "description": "Russian chemist",
+    "birth": "1834",
+    "death": "1907"
+  },
+  {
+    "id": "Q9123",
+    "q_num": 9123,
+    "name": "Ernest Rutherford",
+    "age": 66,
+    "description": "New Zealand-born British chemist and physicist (1871-1937)",
+    "birth": "1871",
+    "death": "1937"
+  },
+  {
+    "id": "Q9130",
+    "q_num": 9130,
+    "name": "Erwin Schr\u00f6dinger",
+    "age": 74,
+    "description": "Austrian physicist",
+    "birth": "1887",
+    "death": "1961"
+  },
+  {
+    "id": "Q9191",
+    "q_num": 9191,
+    "name": "Ren\u00e9 Descartes",
+    "age": 54,
+    "description": "French philosopher, mathematician, and scientist",
+    "birth": "1596",
+    "death": "1650"
+  },
+  {
+    "id": "Q9204",
+    "q_num": 9204,
+    "name": "C. S. Lewis",
+    "age": 65,
+    "description": "British writer",
+    "birth": "1898",
+    "death": "1963"
+  },
+  {
+    "id": "Q9235",
+    "q_num": 9235,
+    "name": "Georg Wilhelm Friedrich Hegel",
+    "age": 61,
+    "description": "German philosopher",
+    "birth": "1770",
+    "death": "1831"
+  },
+  {
+    "id": "Q9312",
+    "q_num": 9312,
+    "name": "Immanuel Kant",
+    "age": 80,
+    "description": "German philosopher",
+    "birth": "1724",
+    "death": "1804"
+  },
+  {
+    "id": "Q9317",
+    "q_num": 9317,
+    "name": "John Maynard Keynes",
+    "age": 63,
+    "description": "British economist (1883-1946)",
+    "birth": "1883",
+    "death": "1946"
+  },
+  {
+    "id": "Q9358",
+    "q_num": 9358,
+    "name": "Friedrich Nietzsche",
+    "age": 56,
+    "description": "German philosopher, poet, composer, cultural critic, and classical philologist",
+    "birth": "1844",
+    "death": "1900"
+  },
+  {
+    "id": "Q9372",
+    "q_num": 9372,
+    "name": "Sima Qian",
+    "age": 59,
+    "description": "Chinese historian and writer",
+    "birth": "-145",
+    "death": "-86"
+  },
+  {
+    "id": "Q9387",
+    "q_num": 9387,
+    "name": "Max Weber",
+    "age": 56,
+    "description": "German sociologist, philosopher, and political economist (1864-1920)",
+    "birth": "1864",
+    "death": "1920"
+  },
+  {
+    "id": "Q9391",
+    "q_num": 9391,
+    "name": "Ludwig Wittgenstein",
+    "age": 62,
+    "description": "Austrian-British philosopher",
+    "birth": "1889",
+    "death": "1951"
+  },
+  {
+    "id": "Q9397",
+    "q_num": 9397,
+    "name": "Zhu Xi",
+    "age": 70,
+    "description": "Song Dynasty Neo-Confucian scholar",
+    "birth": "1130",
+    "death": "1200"
+  },
+  {
+    "id": "Q9438",
+    "q_num": 9438,
+    "name": "Thomas Aquinas",
+    "age": 49,
+    "description": "Italian Dominican friar, philosopher, Catholic priest, and Doctor of the Church",
+    "birth": "1225",
+    "death": "1274"
+  },
+  {
+    "id": "Q9513",
+    "q_num": 9513,
+    "name": "A. P. J. Abdul Kalam",
+    "age": 84,
+    "description": "11th President of India, scientist and science administrator (1931-2015)",
+    "birth": "1931",
+    "death": "2015"
+  },
+  {
+    "id": "Q9554",
+    "q_num": 9554,
+    "name": "Martin Luther",
+    "age": 63,
+    "description": "Saxon priest, monk and theologian, seminal figure in Protestant Reformation",
+    "birth": "1483",
+    "death": "1546"
+  },
+  {
+    "id": "Q9602",
+    "q_num": 9602,
+    "name": "Frances E. Allen",
+    "age": 88,
+    "description": "American computer scientist",
+    "birth": "1932",
+    "death": "2020"
+  },
+  {
+    "id": "Q9958",
+    "q_num": 9958,
+    "name": "Winifred Asprey",
+    "age": 90,
+    "description": "American computer scientist and mathematician",
+    "birth": "1917",
+    "death": "2007"
+  },
+  {
+    "id": "Q9965",
+    "q_num": 9965,
+    "name": "Yongle Emperor",
+    "age": 64,
+    "description": "emperor of the Ming Dynasty",
+    "birth": "1360",
+    "death": "1424"
+  },
+  {
+    "id": "Q10953",
+    "q_num": 10953,
+    "name": "Henriette Avram",
+    "age": 87,
+    "description": "American computer programmer and system analyst",
+    "birth": "1919",
+    "death": "2006"
+  },
+  {
+    "id": "Q11031",
+    "q_num": 11031,
+    "name": "Vilfredo Pareto",
+    "age": 75,
+    "description": "Italian economist and sociologist",
+    "birth": "1848",
+    "death": "1923"
+  },
+  {
+    "id": "Q11065",
+    "q_num": 11065,
+    "name": "Pierre Bouguer",
+    "age": 60,
+    "description": "French scientist",
+    "birth": "1698",
+    "death": "1758"
+  },
+  {
+    "id": "Q11075",
+    "q_num": 11075,
+    "name": "Abd al-Rahman al-Sufi",
+    "age": 83,
+    "description": "Persian astronomer",
+    "birth": "903",
+    "death": "986"
+  },
+  {
+    "id": "Q11079",
+    "q_num": 11079,
+    "name": "Mu\u1e25ammad ibn J\u0101bir al-\u1e24arr\u0101n\u012b al-Batt\u0101n\u012b",
+    "age": 72,
+    "description": "Kurdish astronomer, astrologer, and mathematician",
+    "birth": "858",
+    "death": "930"
+  },
+  {
+    "id": "Q11133",
+    "q_num": 11133,
+    "name": "Ab\u016b Ish\u0101q Ibr\u0101h\u012bm al-Zarq\u0101l\u012b",
+    "age": 60,
+    "description": "Muslim instrument maker, astrologer, and astronomer",
+    "birth": "1027",
+    "death": "1087"
+  },
+  {
+    "id": "Q11156",
+    "q_num": 11156,
+    "name": "Antonin Scalia",
+    "age": 80,
+    "description": "former Associate Justice of the Supreme Court of the United States",
+    "birth": "1936",
+    "death": "2016"
+  },
+  {
+    "id": "Q11428",
+    "q_num": 11428,
+    "name": "Jean Bartik",
+    "age": 87,
+    "description": "American ENIAC computer programmer",
+    "birth": "1924",
+    "death": "2011"
+  },
+  {
+    "id": "Q11431",
+    "q_num": 11431,
+    "name": "Evelyn Berezin",
+    "age": 93,
+    "description": "American computer scientist",
+    "birth": "1925",
+    "death": "2018"
+  },
+  {
+    "id": "Q11440",
+    "q_num": 11440,
+    "name": "Danielle Bunten Berry",
+    "age": 49,
+    "description": "American game designer and programmer",
+    "birth": "1949",
+    "death": "1998"
+  },
+  {
+    "id": "Q11483",
+    "q_num": 11483,
+    "name": "Anita Borg",
+    "age": 54,
+    "description": "American computer scientist",
+    "birth": "1949",
+    "death": "2003"
+  },
+  {
+    "id": "Q11586",
+    "q_num": 11586,
+    "name": "Annie Easley",
+    "age": 73,
+    "description": "American mathematician and rocket scientist",
+    "birth": "1938",
+    "death": "2011"
+  },
+  {
+    "id": "Q11588",
+    "q_num": 11588,
+    "name": "Thelma Estrin",
+    "age": 90,
+    "description": "American computer scientist and engineer",
+    "birth": "1924",
+    "death": "2014"
+  },
+  {
+    "id": "Q11636",
+    "q_num": 11636,
+    "name": "Betty Holberton",
+    "age": 84,
+    "description": "American computer programmer",
+    "birth": "1917",
+    "death": "2001"
+  },
+  {
+    "id": "Q11641",
+    "q_num": 11641,
+    "name": "Grace Hopper",
+    "age": 86,
+    "description": "American computer scientist and United States Navy officer",
+    "birth": "1906",
+    "death": "1992"
+  },
+  {
+    "id": "Q11732",
+    "q_num": 11732,
+    "name": "Michael Mayr",
+    "age": 58,
+    "description": "was Chancellor of Austria in the First Austrian Republic (1864-1922)",
+    "birth": "1864",
+    "death": "1922"
+  },
+  {
+    "id": "Q11752",
+    "q_num": 11752,
+    "name": "Mary Kenneth Keller",
+    "age": 72,
+    "description": "First American woman to receive a PhD in computer science",
+    "birth": "1913",
+    "death": "1985"
+  },
+  {
+    "id": "Q11758",
+    "q_num": 11758,
+    "name": "L. L. Zamenhof",
+    "age": 58,
+    "description": "Polish ophthalmologist and inventor of Esperanto",
+    "birth": "1859",
+    "death": "1917"
+  },
+  {
+    "id": "Q11828",
+    "q_num": 11828,
+    "name": "Alastair G. W. Cameron",
+    "age": 80,
+    "description": "Canadian astrophysicist",
+    "birth": "1925",
+    "death": "2005"
+  },
+  {
+    "id": "Q11847",
+    "q_num": 11847,
+    "name": "Antoni Grabowski",
+    "age": 64,
+    "description": "Polish chemical engineer",
+    "birth": "1857",
+    "death": "1921"
+  },
+  {
+    "id": "Q11884",
+    "q_num": 11884,
+    "name": "Ferdinand Augustin Hallerstein",
+    "age": 71,
+    "description": "Jesuit missionary",
+    "birth": "1703",
+    "death": "1774"
+  },
+  {
+    "id": "Q11887",
+    "q_num": 11887,
+    "name": "William Rowan Hamilton",
+    "age": 60,
+    "description": "Irish mathematician and astronomer",
+    "birth": "1805",
+    "death": "1865"
+  },
+  {
+    "id": "Q12571",
+    "q_num": 12571,
+    "name": "Edmond Privat",
+    "age": 73,
+    "description": "Francophone Swiss Esperantist, historian, university professor, author, journalist and peace activist",
+    "birth": "1889",
+    "death": "1962"
+  },
+  {
+    "id": "Q12622",
+    "q_num": 12622,
+    "name": "Gaston Waringhien",
+    "age": 90,
+    "description": "French linguist, lexicographer and Esperantist",
+    "birth": "1901",
+    "death": "1991"
+  },
+  {
+    "id": "Q12658",
+    "q_num": 12658,
+    "name": "Wilhelm Ostwald",
+    "age": 79,
+    "description": "Baltic German chemist",
+    "birth": "1853",
+    "death": "1932"
+  },
+  {
+    "id": "Q12688",
+    "q_num": 12688,
+    "name": "Jean Jaur\u00e8s",
+    "age": 55,
+    "description": "French / Occitan Socialist leader (1859-1914)",
+    "birth": "1859",
+    "death": "1914"
+  },
+  {
+    "id": "Q12712",
+    "q_num": 12712,
+    "name": "Johann Martin Schleyer",
+    "age": 81,
+    "description": "German Catholic priest",
+    "birth": "1831",
+    "death": "1912"
+  },
+  {
+    "id": "Q12735",
+    "q_num": 12735,
+    "name": "John Amos Comenius",
+    "age": 78,
+    "description": "Czech teacher, educator, philosopher and writer (1592-1670)",
+    "birth": "1592",
+    "death": "1670"
+  },
+  {
+    "id": "Q12750",
+    "q_num": 12750,
+    "name": "Josep Puig i Cadafalch",
+    "age": 89,
+    "description": "Catalan architect (1867-1957)",
+    "birth": "1867",
+    "death": "1956"
+  },
+  {
+    "id": "Q12780",
+    "q_num": 12780,
+    "name": "Rashad Khalifa",
+    "age": 55,
+    "description": "Egyptian-American biochemist",
+    "birth": "1935",
+    "death": "1990"
+  },
+  {
+    "id": "Q12801",
+    "q_num": 12801,
+    "name": "Claude Piron",
+    "age": 77,
+    "description": "Swiss translator and Esperantist",
+    "birth": "1931",
+    "death": "2008"
+  },
+  {
+    "id": "Q12830",
+    "q_num": 12830,
+    "name": "Reinhard Selten",
+    "age": 86,
+    "description": "German economist",
+    "birth": "1930",
+    "death": "2016"
+  },
+  {
+    "id": "Q12889",
+    "q_num": 12889,
+    "name": "Detlev Blanke",
+    "age": 75,
+    "description": "German interlinguistics lecturer",
+    "birth": "1941",
+    "death": "2016"
+  },
+  {
+    "id": "Q12906",
+    "q_num": 12906,
+    "name": "Helmar Frank",
+    "age": 80,
+    "description": "German mathematician and pedagogist",
+    "birth": "1933",
+    "death": "2013"
+  },
+  {
+    "id": "Q12907",
+    "q_num": 12907,
+    "name": "Michel Duc-Goninaz",
+    "age": 83,
+    "description": "French linguist",
+    "birth": "1933",
+    "death": "2016"
+  },
+  {
+    "id": "Q12936",
+    "q_num": 12936,
+    "name": "Magomet Isayev",
+    "age": 83,
+    "description": "Russian Esperantist, translator and linguist",
+    "birth": "1928",
+    "death": "2011"
+  },
+  {
+    "id": "Q12973",
+    "q_num": 12973,
+    "name": "Leopold III of Belgium",
+    "age": 82,
+    "description": "King of the Belgians from 1934 to 1951",
+    "birth": "1901",
+    "death": "1983"
+  },
+  {
+    "id": "Q12998",
+    "q_num": 12998,
+    "name": "Georges Lema\u00eetre",
+    "age": 72,
+    "description": "Belgian scientist and priest",
+    "birth": "1894",
+    "death": "1966"
+  },
+  {
+    "id": "Q13007",
+    "q_num": 13007,
+    "name": "Lidia Zamenhof",
+    "age": 38,
+    "description": "Polish writer, translator, Esperantist and Holocaust victim",
+    "birth": "1904",
+    "death": "1942"
+  },
+  {
+    "id": "Q13230",
+    "q_num": 13230,
+    "name": "Ferdinand de Saussure",
+    "age": 56,
+    "description": "Swiss linguist (1857-1913)",
+    "birth": "1857",
+    "death": "1913"
+  },
+  {
+    "id": "Q13234",
+    "q_num": 13234,
+    "name": "Albert Sechehaye",
+    "age": 76,
+    "description": "Swiss linguist (1870-1946)",
+    "birth": "1870",
+    "death": "1946"
+  },
+  {
+    "id": "Q13236",
+    "q_num": 13236,
+    "name": "Charles Bally",
+    "age": 82,
+    "description": "Swiss linguist (1865-1947)",
+    "birth": "1865",
+    "death": "1947"
+  },
+  {
+    "id": "Q13237",
+    "q_num": 13237,
+    "name": "Ren\u00e9 de Saussure",
+    "age": 75,
+    "description": "Swiss mathematician and Esperantist (1868-1943)",
+    "birth": "1868",
+    "death": "1943"
+  },
+  {
+    "id": "Q13240",
+    "q_num": 13240,
+    "name": "Heinrich Schmid",
+    "age": 78,
+    "description": "Swiss linguist (1921-1999)",
+    "birth": "1921",
+    "death": "1999"
+  },
+  {
+    "id": "Q13242",
+    "q_num": 13242,
+    "name": "Eduard Schwyzer",
+    "age": 69,
+    "description": "Swiss classical philologist (1874-1943)",
+    "birth": "1874",
+    "death": "1943"
+  },
+  {
+    "id": "Q13245",
+    "q_num": 13245,
+    "name": "Adolf Tobler",
+    "age": 75,
+    "description": "Swiss linguist (1835-1910)",
+    "birth": "1835",
+    "death": "1910"
+  },
+  {
+    "id": "Q13247",
+    "q_num": 13247,
+    "name": "Rudolf Thurneysen",
+    "age": 83,
+    "description": "Swiss linguist and Celticist (1857-1940)",
+    "birth": "1857",
+    "death": "1940"
+  },
+  {
+    "id": "Q13509",
+    "q_num": 13509,
+    "name": "L\u00e9on Walras",
+    "age": 76,
+    "description": "French mathematical economist",
+    "birth": "1834",
+    "death": "1910"
+  },
+  {
+    "id": "Q13524",
+    "q_num": 13524,
+    "name": "Alfred Sauvy",
+    "age": 92,
+    "description": "demographer, anthropologist and historian of the French economy",
+    "birth": "1898",
+    "death": "1990"
+  },
+  {
+    "id": "Q13526",
+    "q_num": 13526,
+    "name": "Thomas Robert Malthus",
+    "age": 68,
+    "description": "British political economist",
+    "birth": "1766",
+    "death": "1834"
+  },
+  {
+    "id": "Q14049",
+    "q_num": 14049,
+    "name": "Spencer Fullerton Baird",
+    "age": 64,
+    "description": "American naturalist, ornithologist, ichthyologist, museum curator, and the 2nd Secretary of the Smithsonian",
+    "birth": "1823",
+    "death": "1887"
+  },
+  {
+    "id": "Q14097",
+    "q_num": 14097,
+    "name": "Enid Mumford",
+    "age": 82,
+    "description": "British social scientist, computer scientist & academic",
+    "birth": "1924",
+    "death": "2006"
+  },
+  {
+    "id": "Q14099",
+    "q_num": 14099,
+    "name": "Evi Nemeth",
+    "age": 73,
+    "description": "American engineer",
+    "birth": "1940",
+    "death": "2013"
+  },
+  {
+    "id": "Q14232",
+    "q_num": 14232,
+    "name": "Jean E. Sammet",
+    "age": 89,
+    "description": "American computer scientist",
+    "birth": "1928",
+    "death": "2017"
+  },
+  {
+    "id": "Q14239",
+    "q_num": 14239,
+    "name": "Kaisa Sere",
+    "age": 58,
+    "description": "Finnish computer scientist",
+    "birth": "1954",
+    "death": "2012"
+  },
+  {
+    "id": "Q14254",
+    "q_num": 14254,
+    "name": "Karen Sp\u00e4rck Jones",
+    "age": 72,
+    "description": "British computer scientist",
+    "birth": "1935",
+    "death": "2007"
+  },
+  {
+    "id": "Q14278",
+    "q_num": 14278,
+    "name": "John Frederick William Herschel",
+    "age": 79,
+    "description": "English polymath, mathematician, astronomer, chemist, inventor and photographer",
+    "birth": "1792",
+    "death": "1871"
+  },
+  {
+    "id": "Q14279",
+    "q_num": 14279,
+    "name": "Giovanni Domenico Cassini",
+    "age": 87,
+    "description": "Italian/French mathematician, astronomer, engineer, and astrologer",
+    "birth": "1625",
+    "death": "1712"
+  },
+  {
+    "id": "Q14280",
+    "q_num": 14280,
+    "name": "Giuseppe Piazzi",
+    "age": 80,
+    "description": "Italian Catholic priest of the Theatine order, mathematician, and astronomer",
+    "birth": "1746",
+    "death": "1826"
+  },
+  {
+    "id": "Q14282",
+    "q_num": 14282,
+    "name": "Margherita Hack",
+    "age": 91,
+    "description": "Italian astrophysicist and popular science writer",
+    "birth": "1922",
+    "death": "2013"
+  },
+  {
+    "id": "Q14307",
+    "q_num": 14307,
+    "name": "Nicolas Leblanc",
+    "age": 64,
+    "description": "French chemist",
+    "birth": "1742",
+    "death": "1806"
+  },
+  {
+    "id": "Q14837",
+    "q_num": 14837,
+    "name": "Louis Leakey",
+    "age": 69,
+    "description": "British archaeologist and naturalist whose work was important in establishing human evolutionary development in Africa",
+    "birth": "1903",
+    "death": "1972"
+  },
+  {
+    "id": "Q15387",
+    "q_num": 15387,
+    "name": "John Gillies",
+    "age": 42,
+    "description": "1792-1834, Scottish botanist",
+    "birth": "1792",
+    "death": "1834"
+  },
+  {
+    "id": "Q15405",
+    "q_num": 15405,
+    "name": "Elias Magnus Fries",
+    "age": 84,
+    "description": "Swedish mycologist (1794-1878)",
+    "birth": "1794",
+    "death": "1878"
+  },
+  {
+    "id": "Q15410",
+    "q_num": 15410,
+    "name": "Theodor Magnus Fries",
+    "age": 81,
+    "description": "1832-1913, Swedish biologist",
+    "birth": "1832",
+    "death": "1913"
+  },
+  {
+    "id": "Q15414",
+    "q_num": 15414,
+    "name": "Robert Elias Fries",
+    "age": 90,
+    "description": "Swedish biologist (1876-1966)",
+    "birth": "1876",
+    "death": "1966"
+  },
+  {
+    "id": "Q15417",
+    "q_num": 15417,
+    "name": "Thore Christian Elias Fries",
+    "age": 44,
+    "description": "1886-1930, Swedish biologist",
+    "birth": "1886",
+    "death": "1930"
+  },
+  {
+    "id": "Q15451",
+    "q_num": 15451,
+    "name": "W. D. Hamilton",
+    "age": 64,
+    "description": "British evolutionary biologist (1936-2000)",
+    "birth": "1936",
+    "death": "2000"
+  },
+  {
+    "id": "Q15462",
+    "q_num": 15462,
+    "name": "William Hamilton",
+    "age": 73,
+    "description": "Scottish diplomat, antiquarian, archaeologist and vulcanologist\u00a0(1730-1803)",
+    "birth": "1730",
+    "death": "1803"
+  },
+  {
+    "id": "Q15469",
+    "q_num": 15469,
+    "name": "William John Hamilton",
+    "age": 62,
+    "description": "1805-1867, British geologist",
+    "birth": "1805",
+    "death": "1867"
+  },
+  {
+    "id": "Q15480",
+    "q_num": 15480,
+    "name": "Patrick Browne",
+    "age": 70,
+    "description": "c. 1720-1790, Irish botanist",
+    "birth": "1720",
+    "death": "1790"
+  },
+  {
+    "id": "Q15482",
+    "q_num": 15482,
+    "name": "William Jack",
+    "age": 27,
+    "description": "1795-1822, Scottish botanist",
+    "birth": "1795",
+    "death": "1822"
+  },
+  {
+    "id": "Q15572",
+    "q_num": 15572,
+    "name": "Johann Baptist von Spix",
+    "age": 45,
+    "description": "biologist (1781-1826)",
+    "birth": "1781",
+    "death": "1826"
+  },
+  {
+    "id": "Q15800",
+    "q_num": 15800,
+    "name": "Fran Levstik",
+    "age": 56,
+    "description": "Slovene writer, political activist, playwright and critic (1831\u20131887)",
+    "birth": "1831",
+    "death": "1887"
+  },
+  {
+    "id": "Q15909",
+    "q_num": 15909,
+    "name": "Jo\u017ee Javor\u0161ek",
+    "age": 70,
+    "description": "Slovenian playwright, writer, poet, translator and essayist (20 October 1920 \u2013 2 September 1990)",
+    "birth": "1920",
+    "death": "1990"
+  },
+  {
+    "id": "Q15948",
+    "q_num": 15948,
+    "name": "\u00c9mile Durkheim",
+    "age": 59,
+    "description": "French sociologist",
+    "birth": "1858",
+    "death": "1917"
+  },
+  {
+    "id": "Q15975",
+    "q_num": 15975,
+    "name": "Montesquieu",
+    "age": 66,
+    "description": "French social commentator and political thinker (1689-1755)",
+    "birth": "1689",
+    "death": "1755"
+  },
+  {
+    "id": "Q16053",
+    "q_num": 16053,
+    "name": "Melchior de Vog\u00fc\u00e9",
+    "age": 62,
+    "description": "French diplomat, orientalist, travel writer, archaeologist, philanthropist and literary critic (1848-1910)",
+    "birth": "1848",
+    "death": "1910"
+  },
+  {
+    "id": "Q16389",
+    "q_num": 16389,
+    "name": "Charles K. Kao",
+    "age": 85,
+    "description": "Hong Kong-British-American physicist",
+    "birth": "1933",
+    "death": "2018"
+  },
+  {
+    "id": "Q16447",
+    "q_num": 16447,
+    "name": "Franz Wurst",
+    "age": 88,
+    "description": "Austrian pediatrician",
+    "birth": "1920",
+    "death": "2008"
+  },
+  {
+    "id": "Q16449",
+    "q_num": 16449,
+    "name": "Bernd Baumgartl",
+    "age": 45,
+    "description": "Austrian social scientist",
+    "birth": "1964",
+    "death": "2009"
+  },
+  {
+    "id": "Q16492",
+    "q_num": 16492,
+    "name": "Mary Lee Woods",
+    "age": 93,
+    "description": "British mathematician and computer programmer",
+    "birth": "1924",
+    "death": "2017"
+  },
+  {
+    "id": "Q16493",
+    "q_num": 16493,
+    "name": "Beatrice Helen Worsley",
+    "age": 50,
+    "description": "First female computer scientist in Canada",
+    "birth": "1922",
+    "death": "1972"
+  },
+  {
+    "id": "Q16496",
+    "q_num": 16496,
+    "name": "Irma Wyman",
+    "age": 87,
+    "description": "American computer scientist",
+    "birth": "1928",
+    "death": "2015"
+  },
+  {
+    "id": "Q16498",
+    "q_num": 16498,
+    "name": "Kateryna Yushchenko",
+    "age": 82,
+    "description": "Ukrainian Soviet and Ukrainian computer scientist",
+    "birth": "1919",
+    "death": "2001"
+  },
+  {
+    "id": "Q16571",
+    "q_num": 16571,
+    "name": "Justus von Liebig",
+    "age": 70,
+    "description": "German chemist",
+    "birth": "1803",
+    "death": "1873"
+  },
+  {
+    "id": "Q16581",
+    "q_num": 16581,
+    "name": "Josef Stefan",
+    "age": 58,
+    "description": "Carinthian Slovene physicist, mathematician and poet",
+    "birth": "1835",
+    "death": "1893"
+  },
+  {
+    "id": "Q16924",
+    "q_num": 16924,
+    "name": "J\u00e1nos Bolyai",
+    "age": 58,
+    "description": "Hungarian mathematician",
+    "birth": "1802",
+    "death": "1860"
+  },
+  {
+    "id": "Q17455",
+    "q_num": 17455,
+    "name": "John von Neumann",
+    "age": 54,
+    "description": "Hungarian-American mathematician and polymath",
+    "birth": "1903",
+    "death": "1957"
+  },
+  {
+    "id": "Q17520",
+    "q_num": 17520,
+    "name": "Kathleen Antonelli",
+    "age": 85,
+    "description": "Irish computer programmer",
+    "birth": "1921",
+    "death": "2006"
+  },
+  {
+    "id": "Q17522",
+    "q_num": 17522,
+    "name": "Hertha Ayrton",
+    "age": 69,
+    "description": "English engineer, mathematician and inventor",
+    "birth": "1854",
+    "death": "1923"
+  },
+  {
+    "id": "Q17579",
+    "q_num": 17579,
+    "name": "Tsutomu Yamaguchi",
+    "age": 94,
+    "description": "Japanese national",
+    "birth": "1916",
+    "death": "2010"
+  },
+  {
+    "id": "Q17672",
+    "q_num": 17672,
+    "name": "Anne Elizabeth Ball",
+    "age": 64,
+    "description": "Irish botanist, algologist, and botanical illustrator (1808-1872)",
+    "birth": "1808",
+    "death": "1872"
+  },
+  {
+    "id": "Q17714",
+    "q_num": 17714,
+    "name": "Stephen Hawking",
+    "age": 76,
+    "description": "British theoretical physicist, cosmologist and author (1942-2018).",
+    "birth": "1942",
+    "death": "2018"
+  },
+  {
+    "id": "Q17893",
+    "q_num": 17893,
+    "name": "John Clayton",
+    "age": 79,
+    "description": "American colonial botanist (1694-1773)",
+    "birth": "1694",
+    "death": "1773"
+  },
+  {
+    "id": "Q18243",
+    "q_num": 18243,
+    "name": "William Bartram",
+    "age": 84,
+    "description": "American naturalist (1739-1823)",
+    "birth": "1739",
+    "death": "1823"
+  },
+  {
+    "id": "Q18255",
+    "q_num": 18255,
+    "name": "Mary Stuart MacDougall",
+    "age": 87,
+    "description": "American biologist",
+    "birth": "1885",
+    "death": "1972"
+  },
+  {
+    "id": "Q18413",
+    "q_num": 18413,
+    "name": "Louis de Beaufront",
+    "age": 80,
+    "description": "influence in the development of Ido",
+    "birth": "1855",
+    "death": "1935"
+  },
+  {
+    "id": "Q18425",
+    "q_num": 18425,
+    "name": "Marcellin Berthelot",
+    "age": 80,
+    "description": "French chemist and politician (1827-1907)",
+    "birth": "1827",
+    "death": "1907"
+  },
+  {
+    "id": "Q18436",
+    "q_num": 18436,
+    "name": "\u00c9mile Boirac",
+    "age": 66,
+    "description": "French philosopher, parapsychologist, promoter of Esperanto and writer",
+    "birth": "1851",
+    "death": "1917"
+  },
+  {
+    "id": "Q18443",
+    "q_num": 18443,
+    "name": "Maurice de Broglie",
+    "age": 85,
+    "description": "French physicist",
+    "birth": "1875",
+    "death": "1960"
+  },
+  {
+    "id": "Q18446",
+    "q_num": 18446,
+    "name": "Dalibor Brozovi\u0107",
+    "age": 82,
+    "description": "Croatian linguist, Slavist, dialectologist and politician (1927-2009)",
+    "birth": "1927",
+    "death": "2009"
+  },
+  {
+    "id": "Q18682",
+    "q_num": 18682,
+    "name": "Nicholas Zsirai",
+    "age": 63,
+    "description": "linguist",
+    "birth": "1892",
+    "death": "1955"
+  },
+  {
+    "id": "Q18685",
+    "q_num": 18685,
+    "name": "Elem\u00e9r Schulek",
+    "age": 71,
+    "description": "Hungarian chemist, pharmacist, professor",
+    "birth": "1893",
+    "death": "1964"
+  },
+  {
+    "id": "Q18712",
+    "q_num": 18712,
+    "name": "Gy\u00f6rgy Klapka",
+    "age": 72,
+    "description": "Hungarian soldier (1820-1892)",
+    "birth": "1820",
+    "death": "1892"
+  },
+  {
+    "id": "Q18806",
+    "q_num": 18806,
+    "name": "Franz Mehring",
+    "age": 73,
+    "description": "German publicist, politician and historian (1846-1919)",
+    "birth": "1846",
+    "death": "1919"
+  },
+  {
+    "id": "Q18903",
+    "q_num": 18903,
+    "name": "Johann Hugo Wyttenbach",
+    "age": 81,
+    "description": "founder of the City Library of Trier, local historian",
+    "birth": "1767",
+    "death": "1848"
+  },
+  {
+    "id": "Q18913",
+    "q_num": 18913,
+    "name": "Giuseppe Fiorelli",
+    "age": 73,
+    "description": "Italian classical archaeologist and numismatist (1823-1896)",
+    "birth": "1823",
+    "death": "1896"
+  },
+  {
+    "id": "Q19009",
+    "q_num": 19009,
+    "name": "Edwin Mattison McMillan",
+    "age": 84,
+    "description": "American physicist",
+    "birth": "1907",
+    "death": "1991"
+  },
+  {
+    "id": "Q19045",
+    "q_num": 19045,
+    "name": "Mario Molina",
+    "age": 77,
+    "description": "Mexican chemist",
+    "birth": "1943",
+    "death": "2020"
+  },
+  {
+    "id": "Q19059",
+    "q_num": 19059,
+    "name": "D\u00e9nes K\u0151nig",
+    "age": 60,
+    "description": "Jewish Hungarian mathematician",
+    "birth": "1884",
+    "death": "1944"
+  },
+  {
+    "id": "Q19063",
+    "q_num": 19063,
+    "name": "P\u00e1l Tur\u00e1n",
+    "age": 66,
+    "description": "Hungarian mathematician",
+    "birth": "1910",
+    "death": "1976"
+  },
+  {
+    "id": "Q19074",
+    "q_num": 19074,
+    "name": "Samuel P. Huntington",
+    "age": 81,
+    "description": "American political scientist",
+    "birth": "1927",
+    "death": "2008"
+  },
+  {
+    "id": "Q19425",
+    "q_num": 19425,
+    "name": "Pyotr Vyazemsky",
+    "age": 86,
+    "description": "leading personality of the Golden Age of Russian poetry",
+    "birth": "1792",
+    "death": "1878"
+  },
+  {
+    "id": "Q19526",
+    "q_num": 19526,
+    "name": "Maya Angelou",
+    "age": 86,
+    "description": "African-American poet and author (1928-2014)",
+    "birth": "1928",
+    "death": "2014"
+  },
+  {
+    "id": "Q19796",
+    "q_num": 19796,
+    "name": "Cai Yuanpei",
+    "age": 72,
+    "description": "Chinese educator, Esperantist and the president of Peking University (1868-1940)",
+    "birth": "1868",
+    "death": "1940"
+  },
+  {
+    "id": "Q19802",
+    "q_num": 19802,
+    "name": "Th\u00e9ophile Cart",
+    "age": 76,
+    "description": "French Esperantist professor and linguist",
+    "birth": "1855",
+    "death": "1931"
+  },
+  {
+    "id": "Q19837",
+    "q_num": 19837,
+    "name": "Steve Jobs",
+    "age": 56,
+    "description": "American entrepreneur and co-founder of Apple Inc.",
+    "birth": "1955",
+    "death": "2011"
+  },
+  {
+    "id": "Q19999",
+    "q_num": 19999,
+    "name": "Louis Bernacchi",
+    "age": 66,
+    "description": "Australian physicist and astronomer (1876-1942)",
+    "birth": "1876",
+    "death": "1942"
+  },
+  {
+    "id": "Q20012",
+    "q_num": 20012,
+    "name": "Adolphe Quetelet",
+    "age": 78,
+    "description": "Belgian astronomer, mathematician, statistician and sociologist",
+    "birth": "1796",
+    "death": "1874"
+  },
+  {
+    "id": "Q20015",
+    "q_num": 20015,
+    "name": "John Couch Adams",
+    "age": 73,
+    "description": "British mathematician and astronomer",
+    "birth": "1819",
+    "death": "1892"
+  },
+  {
+    "id": "Q20018",
+    "q_num": 20018,
+    "name": "George Biddell Airy",
+    "age": 91,
+    "description": "English mathematician and astronomer",
+    "birth": "1801",
+    "death": "1892"
+  },
+  {
+    "id": "Q20430",
+    "q_num": 20430,
+    "name": "Sergey Kapitsa",
+    "age": 84,
+    "description": "Soviet and Russian physicist, TV host",
+    "birth": "1928",
+    "death": "2012"
+  },
+  {
+    "id": "Q20553",
+    "q_num": 20553,
+    "name": "Momme Andresen",
+    "age": 94,
+    "description": "German chemist",
+    "birth": "1857",
+    "death": "1951"
+  },
+  {
+    "id": "Q20587",
+    "q_num": 20587,
+    "name": "Ernst L\u00f6fstedt",
+    "age": 85,
+    "description": "North Frisian linguist",
+    "birth": "1893",
+    "death": "1978"
+  },
+  {
+    "id": "Q20645",
+    "q_num": 20645,
+    "name": "Hans Momsen",
+    "age": 76,
+    "description": "North Frisian farmer, mathematician and astronomer",
+    "birth": "1735",
+    "death": "1811"
+  },
+  {
+    "id": "Q20682",
+    "q_num": 20682,
+    "name": "Knut Jungbohn Clement",
+    "age": 70,
+    "description": "Danish linguist",
+    "birth": "1803",
+    "death": "1873"
+  },
+  {
+    "id": "Q20710",
+    "q_num": 20710,
+    "name": "Jean-Martin Charcot",
+    "age": 68,
+    "description": "French neurologist",
+    "birth": "1825",
+    "death": "1893"
+  },
+  {
+    "id": "Q20723",
+    "q_num": 20723,
+    "name": "William Edward Collinson",
+    "age": 80,
+    "description": "British linguist",
+    "birth": "1889",
+    "death": "1969"
+  },
+  {
+    "id": "Q20724",
+    "q_num": 20724,
+    "name": "Louis Couturat",
+    "age": 46,
+    "description": "French logician, mathematician, philosopher and linguist",
+    "birth": "1868",
+    "death": "1914"
+  },
+  {
+    "id": "Q20731",
+    "q_num": 20731,
+    "name": "P\u00ear Denez",
+    "age": 90,
+    "description": "French linguist, lexicographer, scholar and writer",
+    "birth": "1921",
+    "death": "2011"
+  },
+  {
+    "id": "Q20951",
+    "q_num": 20951,
+    "name": "\u00c9lis\u00e9e Reclus",
+    "age": 75,
+    "description": "French geographer and writer",
+    "birth": "1830",
+    "death": "1905"
+  },
+  {
+    "id": "Q21186",
+    "q_num": 21186,
+    "name": "Francis Beaufort",
+    "age": 83,
+    "description": "Irish hydrographer and naval officer",
+    "birth": "1774",
+    "death": "1857"
+  },
+  {
+    "id": "Q21482",
+    "q_num": 21482,
+    "name": "Katharine Burr Blodgett",
+    "age": 81,
+    "description": "American physicist",
+    "birth": "1898",
+    "death": "1979"
+  },
+  {
+    "id": "Q21595",
+    "q_num": 21595,
+    "name": "Edwin Conklin",
+    "age": 89,
+    "description": "American biologist and zoologist",
+    "birth": "1863",
+    "death": "1952"
+  },
+  {
+    "id": "Q21826",
+    "q_num": 21826,
+    "name": "Edith Clarke",
+    "age": 76,
+    "description": "American engineer",
+    "birth": "1883",
+    "death": "1959"
+  },
+  {
+    "id": "Q22530",
+    "q_num": 22530,
+    "name": "Auguste Forel",
+    "age": 83,
+    "description": "Swiss myrmecologist, neuroanatomist and psychiatrist (1848-1931)",
+    "birth": "1848",
+    "death": "1931"
+  },
+  {
+    "id": "Q22570",
+    "q_num": 22570,
+    "name": "Christoph Lehmann",
+    "age": 70,
+    "description": "German writer and town clerk in Speyer",
+    "birth": "1568",
+    "death": "1638"
+  },
+  {
+    "id": "Q22662",
+    "q_num": 22662,
+    "name": "Maurice Ren\u00e9 Fr\u00e9chet",
+    "age": 95,
+    "description": "French mathematician",
+    "birth": "1878",
+    "death": "1973"
+  },
+  {
+    "id": "Q22670",
+    "q_num": 22670,
+    "name": "Friedrich Schiller",
+    "age": 46,
+    "description": "German poet, philosopher, historian, and playwright",
+    "birth": "1759",
+    "death": "1805"
+  },
+  {
+    "id": "Q22677",
+    "q_num": 22677,
+    "name": "Michael S. Hart",
+    "age": 64,
+    "description": "American author, founder of Project Gutenberg",
+    "birth": "1947",
+    "death": "2011"
+  },
+  {
+    "id": "Q22761",
+    "q_num": 22761,
+    "name": "Alexander Gode",
+    "age": 64,
+    "description": "German-American linguist and translator",
+    "birth": "1906",
+    "death": "1970"
+  },
+  {
+    "id": "Q23696",
+    "q_num": 23696,
+    "name": "Simon Stevin",
+    "age": 72,
+    "description": "Flemish scientist, mathematician and military engineer",
+    "birth": "1548",
+    "death": "1620"
+  },
+  {
+    "id": "Q23753",
+    "q_num": 23753,
+    "name": "Reinhard Haupenthal",
+    "age": 71,
+    "description": "German Esperantist, Volap\u00fckist (or Volap\u00fckologist), translator and linguist",
+    "birth": "1945",
+    "death": "2016"
+  },
+  {
+    "id": "Q23810",
+    "q_num": 23810,
+    "name": "Alfred Nobel",
+    "age": 63,
+    "description": "Swedish chemist, innovator, and armaments manufacturer",
+    "birth": "1833",
+    "death": "1896"
+  },
+  {
+    "id": "Q23870",
+    "q_num": 23870,
+    "name": "Otto Jespersen",
+    "age": 83,
+    "description": "Danish linguist",
+    "birth": "1860",
+    "death": "1943"
+  },
+  {
+    "id": "Q23914",
+    "q_num": 23914,
+    "name": "Siegfried Bernfeld",
+    "age": 61,
+    "description": "Austrian psychologist and educator",
+    "birth": "1892",
+    "death": "1953"
+  },
+  {
+    "id": "Q24045",
+    "q_num": 24045,
+    "name": "Rosario Mar\u00eda Guti\u00e9rrez Eskildsen",
+    "age": 80,
+    "description": "Mexican lexicographer, linguist, educator, and poet",
+    "birth": "1899",
+    "death": "1979"
+  },
+  {
+    "id": "Q24085",
+    "q_num": 24085,
+    "name": "Petrus Cunaeus",
+    "age": 52,
+    "description": "pen name of the Dutch Christian scholar Peter van der Kun",
+    "birth": "1586",
+    "death": "1638"
+  },
+  {
+    "id": "Q24139",
+    "q_num": 24139,
+    "name": "Arnold Hermann Ludwig Heeren",
+    "age": 82,
+    "description": "German historian",
+    "birth": "1760",
+    "death": "1842"
+  },
+  {
+    "id": "Q24141",
+    "q_num": 24141,
+    "name": "Hermann Snellen",
+    "age": 74,
+    "description": "Dutch ophthalmologist",
+    "birth": "1834",
+    "death": "1908"
+  },
+  {
+    "id": "Q24292",
+    "q_num": 24292,
+    "name": "Allen G. Debus",
+    "age": 83,
+    "description": "American historian of science",
+    "birth": "1926",
+    "death": "2009"
+  },
+  {
+    "id": "Q24652",
+    "q_num": 24652,
+    "name": "Joseph Gredt",
+    "age": 77,
+    "description": "Luxembourg scholar and philosopher (1863-1940)",
+    "birth": "1863",
+    "death": "1940"
+  },
+  {
+    "id": "Q24897",
+    "q_num": 24897,
+    "name": "Najaf Daryabandari",
+    "age": 91,
+    "description": "Iranian writer",
+    "birth": "1929",
+    "death": "2020"
+  },
+  {
+    "id": "Q25070",
+    "q_num": 25070,
+    "name": "Henry of Latvia",
+    "age": 72,
+    "description": "priest, missionary and historian",
+    "birth": "1187",
+    "death": "1259"
+  },
+  {
+    "id": "Q25120",
+    "q_num": 25120,
+    "name": "Pier Paolo Pasolini",
+    "age": 53,
+    "description": "Italian film director, poet, writer and intellectual",
+    "birth": "1922",
+    "death": "1975"
+  },
+  {
+    "id": "Q25138",
+    "q_num": 25138,
+    "name": "V\u00e1clav Novotn\u00fd",
+    "age": 63,
+    "description": "Czech historian (1869-1932)",
+    "birth": "1869",
+    "death": "1932"
+  },
+  {
+    "id": "Q25318",
+    "q_num": 25318,
+    "name": "Charles-Ange Laisant",
+    "age": 79,
+    "description": "French politician (1840\u20131920)",
+    "birth": "1841",
+    "death": "1920"
+  },
+  {
+    "id": "Q25320",
+    "q_num": 25320,
+    "name": "Paul Langevin",
+    "age": 74,
+    "description": "French physicist, philosopher of science and pedagogue",
+    "birth": "1872",
+    "death": "1946"
+  },
+  {
+    "id": "Q25351",
+    "q_num": 25351,
+    "name": "Theodor Mommsen",
+    "age": 86,
+    "description": "German classical scholar, historian, jurist, journalist, politician, archaeologist and writer (1817-1903)",
+    "birth": "1817",
+    "death": "1903"
+  },
+  {
+    "id": "Q25492",
+    "q_num": 25492,
+    "name": "Zolt\u00e1n G\u00e1bor Szab\u00f3",
+    "age": 87,
+    "description": "Hungarian physical chemist",
+    "birth": "1908",
+    "death": "1995"
+  },
+  {
+    "id": "Q25582",
+    "q_num": 25582,
+    "name": "Frederick Gehring",
+    "age": 87,
+    "description": "American mathematician",
+    "birth": "1925",
+    "death": "2012"
+  },
+  {
+    "id": "Q25690",
+    "q_num": 25690,
+    "name": "John Russell, 6th Duke of Bedford",
+    "age": 73,
+    "description": "British politician (1766-1839)",
+    "birth": "1766",
+    "death": "1839"
+  },
+  {
+    "id": "Q25820",
+    "q_num": 25820,
+    "name": "Thomas Young",
+    "age": 56,
+    "description": "English polymath",
+    "birth": "1773",
+    "death": "1829"
+  },
+  {
+    "id": "Q25951",
+    "q_num": 25951,
+    "name": "Gabdulkhay Akhatov",
+    "age": 59,
+    "description": "Soviet Tatar linguist",
+    "birth": "1927",
+    "death": "1986"
+  },
+  {
+    "id": "Q26204",
+    "q_num": 26204,
+    "name": "Dionysius of Halicarnassus",
+    "age": 53,
+    "description": "ancient Greek historian",
+    "birth": "-60",
+    "death": "-7"
+  },
+  {
+    "id": "Q26566",
+    "q_num": 26566,
+    "name": "Stanford R. Ovshinsky",
+    "age": 90,
+    "description": "prolific American inventor and scientist",
+    "birth": "1922",
+    "death": "2012"
+  },
+  {
+    "id": "Q26611",
+    "q_num": 26611,
+    "name": "J\u00f3zef Aleksander Jab\u0142onowski",
+    "age": 66,
+    "description": "Polish nobleman",
+    "birth": "1711",
+    "death": "1777"
+  },
+  {
+    "id": "Q26681",
+    "q_num": 26681,
+    "name": "Charles Marie de La Condamine",
+    "age": 73,
+    "description": "French explorer, geographer, and mathematician (1701-1774)",
+    "birth": "1701",
+    "death": "1774"
+  },
+  {
+    "id": "Q26714",
+    "q_num": 26714,
+    "name": "Paul Deussen",
+    "age": 74,
+    "description": "German Orientalist and Sanskrit scholar",
+    "birth": "1845",
+    "death": "1919"
+  },
+  {
+    "id": "Q26873",
+    "q_num": 26873,
+    "name": "Milton A. Rothman",
+    "age": 82,
+    "description": "nuclear physicist and college professor",
+    "birth": "1919",
+    "death": "2001"
+  },
+  {
+    "id": "Q26879",
+    "q_num": 26879,
+    "name": "Melvil Dewey",
+    "age": 80,
+    "description": "American librarian and educator",
+    "birth": "1851",
+    "death": "1931"
+  },
+  {
+    "id": "Q26975",
+    "q_num": 26975,
+    "name": "Berthold Epstein",
+    "age": 72,
+    "description": "Czech pediatrician, professor, and scientist",
+    "birth": "1890",
+    "death": "1962"
+  },
+  {
+    "id": "Q27073",
+    "q_num": 27073,
+    "name": "Karl Rohn",
+    "age": 65,
+    "description": "mathematician",
+    "birth": "1855",
+    "death": "1920"
+  },
+  {
+    "id": "Q27134",
+    "q_num": 27134,
+    "name": "Pan Chengdong",
+    "age": 63,
+    "description": "Chinese mathematician",
+    "birth": "1934",
+    "death": "1997"
+  },
+  {
+    "id": "Q27323",
+    "q_num": 27323,
+    "name": "Friedrich Risner",
+    "age": 47,
+    "description": "German mathematician",
+    "birth": "1533",
+    "death": "1580"
+  },
+  {
+    "id": "Q27337",
+    "q_num": 27337,
+    "name": "Christoph Rudolff",
+    "age": 47,
+    "description": "author of the first German textbook on algebra",
+    "birth": "1499",
+    "death": "1546"
+  },
+  {
+    "id": "Q27357",
+    "q_num": 27357,
+    "name": "Francisco de Paula Mart\u00ednez de la Rosa y Berdejo",
+    "age": 75,
+    "description": "Spanish dramatist and politician (1787-1862)",
+    "birth": "1787",
+    "death": "1862"
+  },
+  {
+    "id": "Q27373",
+    "q_num": 27373,
+    "name": "Werner Wolfgang Rogosinski",
+    "age": 70,
+    "description": "British mathematician",
+    "birth": "1894",
+    "death": "1964"
+  },
+  {
+    "id": "Q27374",
+    "q_num": 27374,
+    "name": "Karl Eduard Zetzsche",
+    "age": 64,
+    "description": "German mathematician and physicist",
+    "birth": "1830",
+    "death": "1894"
+  },
+  {
+    "id": "Q27378",
+    "q_num": 27378,
+    "name": "Joseph Levin Saalsch\u00fctz",
+    "age": 62,
+    "description": "German archaeologist , historian , cultural theorist and author",
+    "birth": "1801",
+    "death": "1863"
+  },
+  {
+    "id": "Q27427",
+    "q_num": 27427,
+    "name": "Heiner Zieschang",
+    "age": 68,
+    "description": "German mathematician",
+    "birth": "1936",
+    "death": "2004"
+  },
+  {
+    "id": "Q27507",
+    "q_num": 27507,
+    "name": "Frank Malina",
+    "age": 69,
+    "description": "American aeronautical engineer and painter (1912-1981)",
+    "birth": "1912",
+    "death": "1981"
+  },
+  {
+    "id": "Q27627",
+    "q_num": 27627,
+    "name": "Gustav Roch",
+    "age": 27,
+    "description": "mathematician from Germany",
+    "birth": "1839",
+    "death": "1866"
+  },
+  {
+    "id": "Q27684",
+    "q_num": 27684,
+    "name": "Peter Forssk\u00e5l",
+    "age": 31,
+    "description": "Swedish explorer, orientalist, naturalist and an apostle of Carl Linnaeus (1732-1763)",
+    "birth": "1732",
+    "death": "1763"
+  },
+  {
+    "id": "Q27991",
+    "q_num": 27991,
+    "name": "Hermann M\u00f6ller",
+    "age": 73,
+    "description": "Danish linguist",
+    "birth": "1850",
+    "death": "1923"
+  },
+  {
+    "id": "Q28117",
+    "q_num": 28117,
+    "name": "Theodor Siebs",
+    "age": 79,
+    "description": "German linguist",
+    "birth": "1862",
+    "death": "1941"
+  },
+  {
+    "id": "Q28189",
+    "q_num": 28189,
+    "name": "Abdus Salam",
+    "age": 70,
+    "description": "theoretical physicist, and Nobel Prize in Physics recipient",
+    "birth": "1926",
+    "death": "1996"
+  },
+  {
+    "id": "Q28264",
+    "q_num": 28264,
+    "name": "Marron Curtis Fort",
+    "age": 81,
+    "description": "German linguist",
+    "birth": "1938",
+    "death": "2019"
+  },
+  {
+    "id": "Q28328",
+    "q_num": 28328,
+    "name": "Arno Peters",
+    "age": 86,
+    "description": "German historian and filmmaker",
+    "birth": "1916",
+    "death": "2002"
+  },
+  {
+    "id": "Q28480",
+    "q_num": 28480,
+    "name": "Max Brod",
+    "age": 84,
+    "description": "author, composer, and journalist",
+    "birth": "1884",
+    "death": "1968"
+  },
+  {
+    "id": "Q28636",
+    "q_num": 28636,
+    "name": "Alfred Victor du Pont",
+    "age": 58,
+    "description": "American chemist and industrialist",
+    "birth": "1798",
+    "death": "1856"
+  },
+  {
+    "id": "Q28648",
+    "q_num": 28648,
+    "name": "Dimitrie-Doru Todericiu",
+    "age": 87,
+    "description": "science historian and writer",
+    "birth": "1921",
+    "death": "2008"
+  },
+  {
+    "id": "Q28738",
+    "q_num": 28738,
+    "name": "Casimir Funk",
+    "age": 83,
+    "description": "Polish biochemist",
+    "birth": "1884",
+    "death": "1967"
+  },
+  {
+    "id": "Q28900",
+    "q_num": 28900,
+    "name": "John George Kemeny",
+    "age": 66,
+    "description": "Jewish-Hungarian American mathematician, computer scientist, and educator",
+    "birth": "1926",
+    "death": "1992"
+  },
+  {
+    "id": "Q28910",
+    "q_num": 28910,
+    "name": "John Stevens Cabot Abbott",
+    "age": 72,
+    "description": "American historian, pastor, and pedagogical writer, 1805-1877",
+    "birth": "1805",
+    "death": "1877"
+  },
+  {
+    "id": "Q28937",
+    "q_num": 28937,
+    "name": "Alexis Clairaut",
+    "age": 52,
+    "description": "French mathematician, astronomer, and geophysicist",
+    "birth": "1713",
+    "death": "1765"
+  },
+  {
+    "id": "Q28978",
+    "q_num": 28978,
+    "name": "Ignacy \u0141ukasiewicz",
+    "age": 60,
+    "description": "Polish pharmacist and petroleum industry pioneer (1822-1882)",
+    "birth": "1822",
+    "death": "1882"
+  },
+  {
+    "id": "Q29002",
+    "q_num": 29002,
+    "name": "F\u00e9lix Tisserand",
+    "age": 51,
+    "description": "French astronomer",
+    "birth": "1845",
+    "death": "1896"
+  },
+  {
+    "id": "Q29031",
+    "q_num": 29031,
+    "name": "Charles Oman",
+    "age": 86,
+    "description": "British military historian (1860-1946)",
+    "birth": "1860",
+    "death": "1946"
+  },
+  {
+    "id": "Q29193",
+    "q_num": 29193,
+    "name": "Johann Peter Gustav Lejeune Dirichlet",
+    "age": 54,
+    "description": "German mathematician",
+    "birth": "1805",
+    "death": "1859"
+  },
+  {
+    "id": "Q29194",
+    "q_num": 29194,
+    "name": "J. Horace Round",
+    "age": 74,
+    "description": "English historian and genealogist",
+    "birth": "1854",
+    "death": "1928"
+  },
+  {
+    "id": "Q29404",
+    "q_num": 29404,
+    "name": "Kenneth John Conant",
+    "age": 90,
+    "description": "architectural historian from the United States",
+    "birth": "1894",
+    "death": "1984"
+  },
+  {
+    "id": "Q29549",
+    "q_num": 29549,
+    "name": "Helen Porter",
+    "age": 88,
+    "description": "British botanist (1899-1987)",
+    "birth": "1899",
+    "death": "1987"
+  },
+  {
+    "id": "Q29571",
+    "q_num": 29571,
+    "name": "Jeanne Villepreux-Power",
+    "age": 77,
+    "description": "French biologist",
+    "birth": "1794",
+    "death": "1871"
+  },
+  {
+    "id": "Q29573",
+    "q_num": 29573,
+    "name": "Mildred Dresselhaus",
+    "age": 87,
+    "description": "American physicist",
+    "birth": "1930",
+    "death": "2017"
+  },
+  {
+    "id": "Q29612",
+    "q_num": 29612,
+    "name": "Louise Johnson",
+    "age": 72,
+    "description": "British biochemist and protein crystallographer",
+    "birth": "1940",
+    "death": "2012"
+  },
+  {
+    "id": "Q29737",
+    "q_num": 29737,
+    "name": "Francis Orpen Morris",
+    "age": 83,
+    "description": "Irish clergyman and historian (1810-1893)",
+    "birth": "1810",
+    "death": "1893"
+  },
+  {
+    "id": "Q29866",
+    "q_num": 29866,
+    "name": "Nadir Ibrahimov",
+    "age": 45,
+    "description": "Azerbaijani astronomer",
+    "birth": "1932",
+    "death": "1977"
+  },
+  {
+    "id": "Q29885",
+    "q_num": 29885,
+    "name": "Anton Eleutherius Sauter",
+    "age": 81,
+    "description": "Austrian botanist and physician (1800-1881)",
+    "birth": "1800",
+    "death": "1881"
+  }
+]

@@ -1,0 +1,410 @@
+[
+  {
+    "id": "Q1035",
+    "q_num": 1035,
+    "name": "Charles Darwin",
+    "age": 73,
+    "description": "British naturalist, author of \"On the origin of species, by means of natural sel",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q1043",
+    "q_num": 1043,
+    "name": "Carl Linnaeus",
+    "age": 70,
+    "description": "Swedish botanist, physician, and zoologist (1707-1778)",
+    "age_source": "model"
+  },
+  {
+    "id": "Q1290",
+    "q_num": 1290,
+    "name": "Blaise Pascal",
+    "age": 39,
+    "description": "French mathematician, physicist, inventor, writer, and Christian philosopher",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q5333",
+    "q_num": 5333,
+    "name": "Charles Lyell",
+    "age": 78,
+    "description": "British lawyer and geologist",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q5580",
+    "q_num": 5580,
+    "name": "Albrecht D\u00fcrer",
+    "age": 56,
+    "description": "German painter, printmaker, mathematician, and theorist",
+    "age_source": "model"
+  },
+  {
+    "id": "Q6353",
+    "q_num": 6353,
+    "name": "Gerardus Mercator",
+    "age": 82,
+    "description": "Dutch cartographer, philosopher and mathematician",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q6527",
+    "q_num": 6527,
+    "name": "Jean-Jacques Rousseau",
+    "age": 66,
+    "description": "Genevan philosopher, writer, and composer (1712-1778)",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q6694",
+    "q_num": 6694,
+    "name": "Alexander von Humboldt",
+    "age": 89,
+    "description": "Prussian geographer, naturalist and explorer (1769-1859)",
+    "age_source": "model"
+  },
+  {
+    "id": "Q6722",
+    "q_num": 6722,
+    "name": "Carl Friedrich Gauss",
+    "age": 77,
+    "description": "German mathematician and physicist",
+    "age_source": "model"
+  },
+  {
+    "id": "Q6733",
+    "q_num": 6733,
+    "name": "Edward Teller",
+    "age": 95,
+    "description": "Hungarian-American nuclear physicist",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q7091",
+    "q_num": 7091,
+    "name": "\u00c9variste Galois",
+    "age": 20,
+    "description": "French mathematician",
+    "age_source": "model"
+  },
+  {
+    "id": "Q7099",
+    "q_num": 7099,
+    "name": "Emmy Noether",
+    "age": 53,
+    "description": "German mathematician",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q7103",
+    "q_num": 7103,
+    "name": "Sophie Germain",
+    "age": 55,
+    "description": "French mathematician, physicist, and philosopher",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q7186",
+    "q_num": 7186,
+    "name": "Marie Curie",
+    "age": 66,
+    "description": "Polish-French physicist and chemist (1867-1934)",
+    "age_source": "model"
+  },
+  {
+    "id": "Q7251",
+    "q_num": 7251,
+    "name": "Alan Turing",
+    "age": 41,
+    "description": "British mathematician, logician, cryptanalyst, and computer scientist",
+    "age_source": "model"
+  },
+  {
+    "id": "Q7259",
+    "q_num": 7259,
+    "name": "Ada Lovelace",
+    "age": 36,
+    "description": "English mathematician, considered the first computer programmer",
+    "age_source": "model"
+  },
+  {
+    "id": "Q7474",
+    "q_num": 7474,
+    "name": "Rosalind Franklin",
+    "age": 37,
+    "description": "British chemist, biophysicist, and X-ray crystallographer",
+    "age_source": "model"
+  },
+  {
+    "id": "Q7487",
+    "q_num": 7487,
+    "name": "Dorothy Hodgkin",
+    "age": 84,
+    "description": "British chemist",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q7504",
+    "q_num": 7504,
+    "name": "Ir\u00e8ne Joliot-Curie",
+    "age": 58,
+    "description": "French scientist (1897-1956)",
+    "age_source": "model"
+  },
+  {
+    "id": "Q7604",
+    "q_num": 7604,
+    "name": "Leonhard Euler",
+    "age": 76,
+    "description": "Swiss mathematician",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q8556",
+    "q_num": 8556,
+    "name": "Edsger W. Dijkstra",
+    "age": 72,
+    "description": "Dutch computer scientist",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q8743",
+    "q_num": 8743,
+    "name": "Thomas Alva Edison",
+    "age": 84,
+    "description": "American inventor and businessman",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q8750",
+    "q_num": 8750,
+    "name": "Michael Faraday",
+    "age": 75,
+    "description": "English scientist (1791-1867)",
+    "age_source": "model"
+  },
+  {
+    "id": "Q8753",
+    "q_num": 8753,
+    "name": "Enrico Fermi",
+    "age": 53,
+    "description": "Italian physicist",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q8755",
+    "q_num": 8755,
+    "name": "Colin Maclaurin",
+    "age": 48,
+    "description": "Scottish mathematician",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q8772",
+    "q_num": 8772,
+    "name": "Joseph Fourier",
+    "age": 62,
+    "description": "French mathematician and physicist (1768 \u2013 1830)",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q8814",
+    "q_num": 8814,
+    "name": "Augustin-Louis Cauchy",
+    "age": 67,
+    "description": "French mathematician (1789\u20131857)",
+    "age_source": "model"
+  },
+  {
+    "id": "Q8963",
+    "q_num": 8963,
+    "name": "Johannes Kepler",
+    "age": 58,
+    "description": "German mathematician, astronomer and astrologer",
+    "age_source": "model"
+  },
+  {
+    "id": "Q9021",
+    "q_num": 9021,
+    "name": "Max Planck",
+    "age": 89,
+    "description": "German theoretical physicist",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q9036",
+    "q_num": 9036,
+    "name": "Nikola Tesla",
+    "age": 86,
+    "description": "Serbian-American inventor",
+    "age_source": "model"
+  },
+  {
+    "id": "Q9041",
+    "q_num": 9041,
+    "name": "James Watt",
+    "age": 83,
+    "description": "British engineer (1736\u20131819)",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q9047",
+    "q_num": 9047,
+    "name": "Gottfried Wilhelm Leibniz",
+    "age": 70,
+    "description": "German mathematician and philosopher",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q9095",
+    "q_num": 9095,
+    "name": "James Clerk Maxwell",
+    "age": 48,
+    "description": "Scottish physicist and mathematician",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q9106",
+    "q_num": 9106,
+    "name": "Dmitri Mendeleev",
+    "age": 72,
+    "description": "Russian chemist",
+    "age_source": "model"
+  },
+  {
+    "id": "Q9123",
+    "q_num": 9123,
+    "name": "Ernest Rutherford",
+    "age": 66,
+    "description": "New Zealand-born British chemist and physicist (1871-1937)",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q9130",
+    "q_num": 9130,
+    "name": "Erwin Schr\u00f6dinger",
+    "age": 73,
+    "description": "Austrian physicist",
+    "age_source": "model"
+  },
+  {
+    "id": "Q9191",
+    "q_num": 9191,
+    "name": "Ren\u00e9 Descartes",
+    "age": 53,
+    "description": "French philosopher, mathematician, and scientist",
+    "age_source": "model"
+  },
+  {
+    "id": "Q9235",
+    "q_num": 9235,
+    "name": "Georg Wilhelm Friedrich Hegel",
+    "age": 61,
+    "description": "German philosopher",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q9312",
+    "q_num": 9312,
+    "name": "Immanuel Kant",
+    "age": 79,
+    "description": "German philosopher",
+    "age_source": "model"
+  },
+  {
+    "id": "Q9387",
+    "q_num": 9387,
+    "name": "Max Weber",
+    "age": 56,
+    "description": "German sociologist, philosopher, and political economist (1864-1920)",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q9391",
+    "q_num": 9391,
+    "name": "Ludwig Wittgenstein",
+    "age": 62,
+    "description": "Austrian-British philosopher",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q11641",
+    "q_num": 11641,
+    "name": "Grace Hopper",
+    "age": 85,
+    "description": "American computer scientist and United States Navy officer",
+    "age_source": "model"
+  },
+  {
+    "id": "Q11887",
+    "q_num": 11887,
+    "name": "William Rowan Hamilton",
+    "age": 60,
+    "description": "Irish mathematician and astronomer",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q12998",
+    "q_num": 12998,
+    "name": "Georges Lema\u00eetre",
+    "age": 71,
+    "description": "Belgian scientist and priest",
+    "age_source": "model"
+  },
+  {
+    "id": "Q15948",
+    "q_num": 15948,
+    "name": "\u00c9mile Durkheim",
+    "age": 59,
+    "description": "French sociologist",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q15975",
+    "q_num": 15975,
+    "name": "Montesquieu",
+    "age": 66,
+    "description": "French social commentator and political thinker (1689-1755)",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q16571",
+    "q_num": 16571,
+    "name": "Justus von Liebig",
+    "age": 70,
+    "description": "German chemist",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q16924",
+    "q_num": 16924,
+    "name": "J\u00e1nos Bolyai",
+    "age": 57,
+    "description": "Hungarian mathematician",
+    "age_source": "model"
+  },
+  {
+    "id": "Q17455",
+    "q_num": 17455,
+    "name": "John von Neumann",
+    "age": 53,
+    "description": "Hungarian-American mathematician and polymath",
+    "age_source": "model"
+  },
+  {
+    "id": "Q17714",
+    "q_num": 17714,
+    "name": "Stephen Hawking",
+    "age": 76,
+    "description": "British theoretical physicist, cosmologist and author (1942-2018).",
+    "age_source": "dataset"
+  },
+  {
+    "id": "Q23810",
+    "q_num": 23810,
+    "name": "Alfred Nobel",
+    "age": 63,
+    "description": "Swedish chemist, innovator, and armaments manufacturer",
+    "age_source": "dataset"
+  }
+]
