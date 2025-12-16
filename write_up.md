@@ -5,12 +5,12 @@ He operationalized this with a [manifold question](https://manifold.markets/LeoG
 Opus 4.5 reliably (128/128) answers this question correctly (at t=1.0) and with some prompting tricks Opus 4 and Sonnet 4 also answer this question correctly all of the time.[^repeat]
 Additionally, I find that on a dataset of similar fact-composition questions, Opus 4.5 gets 85.7% correct (64.7% without few-shot prompting and without prompting tricks). 
 
-[^repeat]: The prompting trick is to repeat the problem 5 times as I discuss below. Using a 10 shot prompt with no repeats also yields perfect performance for Opus 4 and Sonnet 4.
+[^repeat]: The prompting trick is to repeat the problem 5 times as I discuss below. Using a 10-shot prompt with no repeats also yields perfect performance for Opus 4 and Sonnet 4.
 
 In a prior post, I found that repeating the question multiple times improves no-CoT performance for math questions.
 I find that this also improves performance on this fact-composition dataset.
 I find that 5 repeats seems to work best (similar to math results).
-Interestingly, if I use a 0-shot prompt (instead of the 10-shot prompt I use by default), repeating the question 5 times boost performance all the way from 64.7% to 84.7% for Opus 4.5, implying that repeats can substitute for a few-shot prompt in this context. (I see a similarly large boost for Sonnet 4).
+Interestingly, if I use a 0-shot prompt (instead of the 10-shot prompt I use by default), repeating the question 5 times boosts performance all the way from 64.7% to 84.7% for Opus 4.5, implying that repeats can substitute for a few-shot prompt in this context. (I see a similarly large boost for Sonnet 4.)
 
 Here are the results with a 10-shot prompt on this dataset:
 
@@ -22,7 +22,7 @@ And with either 0-shot or 10-shot:
 
 (Sonnet 4 actually does better with 0-shot + repeats than with 10-shot + repeats.)
 
-The public version of this code base can be found [here](https://github.com/rgreenblatt/compose_facts). I've removed the composition dataset to reduce leakage, but you can regenerate it using `python3 create_compositional_dataset.py -n 300`. PLEASE DON'T PUBLICLY POST THIS DATASET INCLUDING BY PUSHING IT TO GITHUB. (I also removed the correct answer in the "run_manifold_eval.py" file, you can manually edit this back in to run this file.)
+The public version of this codebase can be found [here](https://github.com/rgreenblatt/compose_facts). I've removed the composition dataset to reduce leakage, but you can regenerate it using `python3 create_compositional_dataset.py -n 300`. PLEASE DON'T PUBLICLY POST THIS DATASET INCLUDING BY PUSHING IT TO GITHUB. (I also removed the correct answer in the "run_manifold_eval.py" file, you can manually edit this back in to run this file.)
 
 # Dataset details 
 
@@ -64,13 +64,13 @@ I tried to get Opus 4.5 to do this entire project end-to-end after giving it a d
 It seemed moderately close to doing a decent job on the empirical side of the project, but in practice there were several issues that I ended up correcting:
 
 - The initial dataset the model made wasn't ideal in a few ways (mostly the "static" questions it generated were often overly easy IMO and the code it used for combining the facts was written strangely and only used certain orderings of the pairings of different datasets).
-- The model didn't do a good job sanity checking itself (e.g. looking at the dataset it generated) by default without reminders, but with reminders it did a OK job (though missed some stuff I wanted to change) and ended up correcting some bugs. (In another similar project, I found it missed a fatal issue that was easy to notice after it did a sanity check on the dataset at my urging but immediately noticed and fixed the issue after I asked it if it noticed anything wrong.)
+- The model didn't do a good job sanity checking itself (e.g. looking at the dataset it generated) by default without reminders, but with reminders it did an OK job (though missed some stuff I wanted to change) and ended up correcting some bugs. (In another similar project, I found it missed a fatal issue that was easy to notice after it did a sanity check on the dataset at my urging but immediately noticed and fixed the issue after I asked it if it noticed anything wrong.)
 - The model made somewhat strange/bad choices on how to handle the few-shot prompt intersecting with the question the model was being evaluated on. This resulted in a worse evaluation and messier code than what I got after reprogramming it. (I explicitly told it to handle overlap, I'm not sure it would have handled this at all by default.)
 - Generally the model seemed somewhat lazy and it did the most minimal thing rather than (e.g.) generating reasonable plots without prompting.
 - I think the model would have made bad choices about exactly what experiments to run and not run and might have missed some interesting findings.
 
-By the end of the project, I managed the AI for the last bit in an extremely hands on way (or did it myself), but it did the bulk of the project autonomously with moderate management (still much more management than I would give an intern).
-This write up is entirely written by me.
+By the end of the project, I managed the AI for the last bit in an extremely hands-on way (or did it myself), but it did the bulk of the project autonomously with moderate management (still much more management than I would give an intern).
+This write-up is entirely written by me (and I'd guess that Opus 4.5 wouldn't have done a satisfactory job with the write-up).
 
 Generally, I think an intern could probably have done a decent job with this project without almost any management from me and Opus 4.5 underperformed this baseline by a decent amount, though for this small project it doesn't seem super far away.
 
@@ -88,3 +88,4 @@ Generally, I think an intern could probably have done a decent job with this pro
 |-------|----------|----------|-----------|-----------|
 | Sonnet 4 | 63.7% | 80.3% | 75.0% | 75.7% |
 | Opus 4.5 | 64.7% | 84.7% | 81.0% | 85.7% |
+
