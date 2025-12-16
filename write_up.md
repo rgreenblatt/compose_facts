@@ -22,7 +22,7 @@ And with either 0-shot or 10-shot:
 
 (Sonnet 4 actually does better with 0-shot + repeats than with 10-shot + repeats.)
 
-The public version of this code base can be found [here](TODO). I've removed the composition dataset to reduce leakage, but you can regenerate it using `python3 create_compositional_dataset.py -n 300`. PLEASE DON'T PUBLICLY POST THIS DATASET INCLUDING BY PUSHING IT TO GITHUB. (I also removed the correct answer in the "run_manifold_eval.py" file, you can manually edit this back in to run this file.)
+The public version of this code base can be found [here](https://github.com/rgreenblatt/compose_facts). I've removed the composition dataset to reduce leakage, but you can regenerate it using `python3 create_compositional_dataset.py -n 300`. PLEASE DON'T PUBLICLY POST THIS DATASET INCLUDING BY PUSHING IT TO GITHUB. (I also removed the correct answer in the "run_manifold_eval.py" file, you can manually edit this back in to run this file.)
 
 # Dataset details 
 
@@ -56,7 +56,7 @@ Here are 15 random questions from this dataset:
 
 Note that some of these facts might be sensitive to the data cutoff of the model, I haven't really tried seriously to avoid this.
 
-For the exact dataset and more details, see the open source repo [here](TODO).
+For the exact dataset and more details, see the open source repo [here](https://github.com/rgreenblatt/compose_facts).
 
 # Appendix: How helpful were AIs for this project?
 
