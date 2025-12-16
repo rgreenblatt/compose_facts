@@ -41,6 +41,7 @@ def select_few_shot_questions(questions, k_shot=10, seed=42):
     few_shot_questions = [questions[i] for i in indices[:k_shot]]
     return few_shot_questions, few_shot_indices
 
+
 def select_few_shot_question_for_problem(questions, question_index, few_shot_indices):
     facts_used_in_q = get_component_facts(questions[question_index])
 
@@ -57,7 +58,9 @@ def select_few_shot_question_for_problem(questions, question_index, few_shot_ind
 
     assert question_index not in non_overlapping_indices, "should overlap with itself"
 
-    assert len(non_overlapping_indices) > len(few_shot_indices), "Not enough non-overlapping questions to select few-shot examples."
+    assert len(non_overlapping_indices) > len(
+        few_shot_indices
+    ), "Not enough non-overlapping questions to select few-shot examples."
 
     new_few_shot_indices = []
     for idx in few_shot_indices:
@@ -75,12 +78,21 @@ def select_few_shot_question_for_problem(questions, question_index, few_shot_ind
 
     return new_few_shot_questions, new_few_shot_indices
 
-def build_user_message(question, repeat_problem=None):
+
+def build_user_message(question, repeat_problem=None, non_numerical: bool | None = None):
     """Build the user message for a question."""
+    # Auto-detect non_numerical from question if not explicitly set
+    if isinstance(question, dict) and non_numerical is None:
+        non_numerical = question.get("answer_type") == "element_name"
+
     instruction = (
-        "You will be given a question that requires combining two facts and adding them. "
-        "Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is just the "
-        "numerical answer, nothing else. No explanation, no words, no reasoning, just the number."
+        "You will be given a question that requires combining two facts and adding them"
+        + (" and processing this to get a final answer" if non_numerical else "")
+        + ". "
+        + "Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is just the "
+        + ("" if non_numerical else "numerical ")
+        + "answer, nothing else. No explanation, no words, no reasoning, just the "
+        + ("answer." if non_numerical else "number.")
     )
 
     q_text = question["question"] if isinstance(question, dict) else question
@@ -101,14 +113,18 @@ def build_few_shot_messages(few_shot_questions, repeat_problem=None, add_cache_c
     for question in few_shot_questions:
         user_text = build_user_message(question, repeat_problem=repeat_problem)
 
-        messages.append({
-            "role": "user",
-            "content": [{"type": "text", "text": user_text}],
-        })
-        messages.append({
-            "role": "assistant",
-            "content": f"Answer: {question['answer']}",
-        })
+        messages.append(
+            {
+                "role": "user",
+                "content": [{"type": "text", "text": user_text}],
+            }
+        )
+        messages.append(
+            {
+                "role": "assistant",
+                "content": f"Answer: {question['answer']}",
+            }
+        )
 
     # Add cache control to last user message
     if add_cache_control and messages:
@@ -116,7 +132,10 @@ def build_few_shot_messages(few_shot_questions, repeat_problem=None, add_cache_c
 
     return messages
 
-def build_full_prompt(questions, question_index, default_few_shot_indices, repeat_problem=None, add_cache_control=True, verbosity=1):
+
+def build_full_prompt(
+    questions, question_index, default_few_shot_indices, repeat_problem=None, add_cache_control=True, verbosity=1
+):
 
     few_shot_questions, new_few_shot_indices = select_few_shot_question_for_problem(
         questions, question_index, default_few_shot_indices
@@ -125,13 +144,21 @@ def build_full_prompt(questions, question_index, default_few_shot_indices, repea
 
     using_default_few_shot_indices = new_few_shot_indices == default_few_shot_indices
     if verbosity >= 2 and not using_default_few_shot_indices:
-        print(f"Replaced few-shot indices {default_few_shot_indices} with {new_few_shot_indices} for question index {question_index} to avoid fact overlap.")
+        print(
+            f"Replaced few-shot indices {default_few_shot_indices} with {new_few_shot_indices} for question index {question_index} to avoid fact overlap."
+        )
 
     question = questions[question_index]
 
     for fsq in few_shot_questions:
-        assert question["question"] != fsq["question"], ("Test question should not be in few-shot examples.", question["question"], fsq["question"])
-        assert len(set(get_component_facts(question)).intersection(set(get_component_facts(fsq)))) == 0, "Few-shot questions should not share facts with the test question."
+        assert question["question"] != fsq["question"], (
+            "Test question should not be in few-shot examples.",
+            question["question"],
+            fsq["question"],
+        )
+        assert (
+            len(set(get_component_facts(question)).intersection(set(get_component_facts(fsq)))) == 0
+        ), "Few-shot questions should not share facts with the test question."
 
     few_shot_messages = build_few_shot_messages(
         few_shot_questions,

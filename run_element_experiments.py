@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Run all compositional reasoning experiments across models and repetition settings.
+Run all element name compositional reasoning experiments across models and repetition settings.
 """
 
 import subprocess
@@ -33,10 +33,11 @@ def run_evaluation(model_id, model_name, repeat, k_shot=10):
     """Run a single evaluation."""
     # Create model-specific output filename
     model_short = model_name.lower().replace(" ", "_").replace(".", "_")
-    output_file = f"eval_results/{model_short}_k{k_shot}_r{repeat}.json"
+    output_file = f"eval_results/element_{model_short}_k{k_shot}_r{repeat}.json"
 
     cmd = [
         "python", "eval_compositional.py",
+        "--input", "compositional_element_questions.json",
         "--model", model_id,
         "--repeat", str(repeat),
         "--k-shot", str(k_shot),
@@ -62,7 +63,7 @@ def load_results(filepath):
 def load_problem_results(model_name, repeat, k_shot=10):
     """Load individual problem results from output file."""
     model_short = model_name.lower().replace(" ", "_").replace(".", "_")
-    output_file = f"eval_results/{model_short}_k{k_shot}_r{repeat}.json"
+    output_file = f"eval_results/element_{model_short}_k{k_shot}_r{repeat}.json"
 
     if not os.path.exists(output_file):
         return None, None
@@ -196,7 +197,7 @@ def plot_bar_chart(all_results):
     # Customize plot
     ax.set_xlabel("Model", fontsize=12, fontweight="bold")
     ax.set_ylabel("Accuracy (%)", fontsize=12, fontweight="bold")
-    ax.set_title("Compositional Reasoning: Varying Models and Repetition\n(95% CI, paired t-test p-values vs r=1 baseline)",
+    ax.set_title("Element Name Compositional Reasoning: Varying Models and Repetition\n(95% CI, paired t-test p-values vs r=1 baseline)",
                  fontsize=14, fontweight="bold")
     ax.set_xticks(x)
     ax.set_xticklabels(models, fontsize=10)
@@ -205,7 +206,7 @@ def plot_bar_chart(all_results):
     ax.set_ylim(0, 105)
 
     plt.tight_layout()
-    plot_filename = "eval_results/bar_chart.png"
+    plot_filename = "eval_results/element_bar_chart.png"
     plt.savefig(plot_filename, dpi=300, bbox_inches="tight")
     print(f"\nBar chart saved to: {plot_filename}")
     plt.close()
@@ -309,7 +310,7 @@ def plot_zero_shot_comparison(all_results):
     # Customize plot
     ax.set_xlabel("Model", fontsize=12, fontweight="bold")
     ax.set_ylabel("Accuracy (%)", fontsize=12, fontweight="bold")
-    ax.set_title("Effect of Few-Shot Examples and Repetition\n(95% CI, p-values vs k=0, r=1 baseline)",
+    ax.set_title("Element Name: Effect of Few-Shot Examples and Repetition\n(95% CI, p-values vs k=0, r=1 baseline)",
                  fontsize=14, fontweight="bold")
     ax.set_xticks(x)
     ax.set_xticklabels(models, fontsize=10)
@@ -318,7 +319,7 @@ def plot_zero_shot_comparison(all_results):
     ax.set_ylim(0, 105)
 
     plt.tight_layout()
-    plot_filename = "eval_results/zero_shot_comparison.png"
+    plot_filename = "eval_results/element_zero_shot_comparison.png"
     plt.savefig(plot_filename, dpi=300, bbox_inches="tight")
     print(f"\nZero-shot comparison chart saved to: {plot_filename}")
     plt.close()
@@ -328,7 +329,7 @@ def main():
     os.makedirs("eval_results", exist_ok=True)
 
     print("=" * 70)
-    print("COMPOSITIONAL REASONING EXPERIMENT SWEEP")
+    print("ELEMENT NAME COMPOSITIONAL REASONING EXPERIMENT SWEEP")
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 70)
 
@@ -343,7 +344,7 @@ def main():
 
             # Generate output filename
             model_short = model_name.lower().replace(" ", "_").replace(".", "_")
-            output_file = f"eval_results/{model_short}_k10_r{repeat}.json"
+            output_file = f"eval_results/element_{model_short}_k10_r{repeat}.json"
 
             run_evaluation(model_id, model_name, repeat, k_shot=10)
             result = load_results(output_file)
@@ -363,7 +364,7 @@ def main():
 
             # Generate output filename
             model_short = model_name.lower().replace(" ", "_").replace(".", "_")
-            output_file = f"eval_results/{model_short}_k0_r{repeat}.json"
+            output_file = f"eval_results/element_{model_short}_k0_r{repeat}.json"
 
             run_evaluation(model_id, model_name, repeat, k_shot=0)
             result = load_results(output_file)
@@ -412,7 +413,7 @@ def main():
         print(f"| {model_name} | {acc_k0_r1:.1f}% | {acc_k0_r5:.1f}% | {acc_k10_r1:.1f}% | {acc_k10_r5:.1f}% |")
 
     # Save summary
-    summary_file = "eval_results/summary.json"
+    summary_file = "eval_results/element_summary.json"
     with open(summary_file, "w") as f:
         json.dump(all_results, f, indent=2)
     print(f"\nSummary saved to {summary_file}")

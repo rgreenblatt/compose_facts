@@ -68,8 +68,9 @@ def copy_repo(dest_dir: str):
                 content = f.read()
 
             # Replace the correct_answer line using regex to avoid hardcoding the answer
+            # Matches both numeric and string values
             content = re.sub(
-                r'correct_answer = \d+',
+                r'correct_answer = (?:\d+|"[^"]*")',
                 "correct_answer = None; assert correct_answer is not None, 'fill in correct answer with the right answer before running' # DO NOT COMMIT THE CORRECT ANSWER TO AVOID LEAKAGE!!!",
                 content
             )
@@ -82,11 +83,17 @@ def copy_repo(dest_dir: str):
             with open(src, "r") as f:
                 content = f.read()
 
-            # Add compositional_questions.json if not already present
-            if "compositional_questions.json" not in content:
-                if not content.endswith("\n"):
-                    content += "\n"
-                content += "compositional_questions.json\n"
+            # Add compositional question files if not already present
+            files_to_add = [
+                "compositional_questions.json",
+                "compositional_element_questions.json"
+            ]
+
+            for file in files_to_add:
+                if file not in content:
+                    if not content.endswith("\n"):
+                        content += "\n"
+                    content += f"{file}\n"
 
             with open(dst, "w") as f:
                 f.write(content)

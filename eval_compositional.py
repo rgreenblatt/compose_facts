@@ -110,20 +110,33 @@ async def evaluate_question(
 
             assert response_text is not None
 
-        # Parse response
-        try:
+        # Parse response based on answer type
+        answer_type = question.get("answer_type", "number")
+        if answer_type == "element_name":
+            # Parse string answer (element name)
             cleaned = (
                 response_text.strip()
                 .lower()
-                .replace(",", "")
                 .removeprefix("answer:")
                 .strip()
             )
-            predicted = int(cleaned.split()[0] if cleaned.split() else cleaned)
-        except (ValueError, IndexError):
-            if verbosity >= 1:
-                print(f"Could not parse response: {response_text[:50]}")
-            predicted = None
+            # Extract first word as the element name
+            predicted = cleaned.split()[0] if cleaned.split() else cleaned
+        else:
+            # Parse numerical answer
+            try:
+                cleaned = (
+                    response_text.strip()
+                    .lower()
+                    .replace(",", "")
+                    .removeprefix("answer:")
+                    .strip()
+                )
+                predicted = int(cleaned.split()[0] if cleaned.split() else cleaned)
+            except (ValueError, IndexError):
+                if verbosity >= 1:
+                    print(f"Could not parse response: {response_text[:50]}")
+                predicted = None
 
         is_correct = predicted == question["answer"]
 

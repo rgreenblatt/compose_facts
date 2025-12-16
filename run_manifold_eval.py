@@ -55,8 +55,8 @@ async def run_sample(
         assert response_text is not None
     return response_text
 
-def parse_response(response_text):
-    """Parse response to extract numeric answer."""
+def parse_response(response_text, is_int: bool):
+    """Parse response to extract numeric/str answer."""
     if response_text is None:
         return None
     try:
@@ -67,7 +67,10 @@ def parse_response(response_text):
             .removeprefix("answer:")
             .strip()
         )
-        return int(cleaned.split()[0] if cleaned.split() else cleaned)
+        final = cleaned.split()[0] if cleaned.split() else cleaned
+        if is_int:
+            return int(final)
+        return final
     except (ValueError, IndexError):
         return None
 
@@ -95,7 +98,7 @@ async def async_main(messages, n, correct_answer):
         responses = await asyncio.gather(*tasks)
 
         # Parse and score
-        parsed = [parse_response(r) for r in responses]
+        parsed = [parse_response(r, is_int=isinstance(correct_answer, int)) for r in responses]
         correct = sum(1 for p in parsed if p == correct_answer)
         accuracy = correct / n
 
@@ -135,6 +138,7 @@ def main():
     parser.add_argument("--k-shot", "-k", type=int, default=10, help="Number of few-shot examples")
     parser.add_argument("--repeat", "-r", type=int, default=1, help="Repeat question N times")
     parser.add_argument("--exclude-atomic", action="store_true", help="Exclude questions containing 'atomic' from few-shot prompt")
+    parser.add_argument("--harder", action="store_true", help="Do harder version of the question")
     args = parser.parse_args()
 
     questions = load_questions(args.input)
@@ -166,18 +170,25 @@ def main():
 
     # Assert no answer leakage in few-shot prompt
     few_shot_str = str(few_shot_messages).lower()
-    assert "uranium" not in few_shot_str, "Few-shot prompt contains 'uranium' - answer leakage!"
-    assert "euler" not in few_shot_str, "Few-shot prompt contains 'euler' - answer leakage!"
 
     # The original Manifold market question
-    question_text = "What is the sum of the atomic number of uranium and the age at which Euler died?"
-    correct_answer = None; assert correct_answer is not None, 'fill in correct answer with the right answer before running' # DO NOT COMMIT THE CORRECT ANSWER TO AVOID LEAKAGE!!!
+    if args.harder:
+        assert "cube" not in few_shot_str, "Few-shot prompt contains 'cube' - answer leakage!"
+        assert "euler" not in few_shot_str, "Few-shot prompt contains 'euler' - answer leakage!"
+        question_text  = "What is the name of the element with an atomic number equal to the sum of the age at which Euler died and the number of faces on a cube?"
+        correct_answer = None; assert correct_answer is not None, 'fill in correct answer with the right answer before running' # DO NOT COMMIT THE CORRECT ANSWER TO AVOID LEAKAGE!!!
+        assert correct_answer not in few_shot_str, "Few-shot prompt has answer leakage!"
+    else:
+        assert "uranium" not in few_shot_str, "Few-shot prompt contains 'uranium' - answer leakage!"
+        assert "euler" not in few_shot_str, "Few-shot prompt contains 'euler' - answer leakage!"
+        question_text = "What is the sum of the atomic number of uranium and the age at which Euler died?"
+        correct_answer = None; assert correct_answer is not None, 'fill in correct answer with the right answer before running' # DO NOT COMMIT THE CORRECT ANSWER TO AVOID LEAKAGE!!!
 
     # Build messages
     messages = few_shot_messages + [
         {
             "role": "user",
-            "content": build_user_message({"question": question_text}, repeat_problem=args.repeat),
+            "content": build_user_message({"question": question_text}, repeat_problem=args.repeat, non_numerical=args.harder),
         },
         {"role": "assistant", "content": "Answer:"},  # prefill
     ]
