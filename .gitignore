@@ -1,5 +1,5 @@
 /caches/
-/eval_results/
+/eval_results/*.json
 __pycache__/
 spell_check_out/
 AgeDataset-V1.csv
