@@ -79,8 +79,15 @@ def select_few_shot_question_for_problem(questions, question_index, few_shot_ind
     return new_few_shot_questions, new_few_shot_indices
 
 
-def build_user_message(question, repeat_problem=None, non_numerical: bool | None = None):
-    """Build the user message for a question."""
+def build_user_message(question, repeat_problem=None, non_numerical: bool | None = None, filler_tokens: int | None = None):
+    """Build the user message for a question.
+
+    Args:
+        question: The question dict or string
+        repeat_problem: Number of times to repeat the problem (None = 1 time)
+        non_numerical: Whether the answer is non-numerical (auto-detected if None)
+        filler_tokens: Number of filler tokens (counting 1 to N) to add after the problem
+    """
     # Auto-detect non_numerical from question if not explicitly set
     if isinstance(question, dict) and non_numerical is None:
         non_numerical = question.get("answer_type") == "element_name"
@@ -95,23 +102,33 @@ def build_user_message(question, repeat_problem=None, non_numerical: bool | None
         + ("answer." if non_numerical else "number.")
     )
 
+    if filler_tokens is not None:
+        instruction += f" After the question, there will be filler tokens (counting from 1 to {filler_tokens}) to give you extra space to process the problem before answering."
+
     q_text = question["question"] if isinstance(question, dict) else question
 
     if repeat_problem is None or repeat_problem == 1:
-        return f"{instruction}\n\nQuestion: {q_text}"
+        out = f"{instruction}\n\nQuestion: {q_text}"
     else:
         parts = [f"Question: {q_text}"]
         for i in range(1, repeat_problem):
             parts.append(f"Question (repeat #{i+1}): {q_text}")
-        return f"{instruction}\n\n" + "\n\n".join(parts)
+        out = f"{instruction}\n\n" + "\n\n".join(parts)
+
+    # Add filler tokens if specified
+    if filler_tokens is not None:
+        filler = " ".join(str(i) for i in range(1, filler_tokens + 1))
+        out += f"\n\nFiller: {filler}"
+
+    return out
 
 
-def build_few_shot_messages(few_shot_questions, repeat_problem=None, add_cache_control=True):
+def build_few_shot_messages(few_shot_questions, repeat_problem=None, add_cache_control=True, filler_tokens=None):
     """Build the few-shot messages as user/assistant pairs."""
     messages = []
 
     for question in few_shot_questions:
-        user_text = build_user_message(question, repeat_problem=repeat_problem)
+        user_text = build_user_message(question, repeat_problem=repeat_problem, filler_tokens=filler_tokens)
 
         messages.append(
             {
@@ -134,7 +151,7 @@ def build_few_shot_messages(few_shot_questions, repeat_problem=None, add_cache_c
 
 
 def build_full_prompt(
-    questions, question_index, default_few_shot_indices, repeat_problem=None, add_cache_control=True, verbosity=1
+    questions, question_index, default_few_shot_indices, repeat_problem=None, add_cache_control=True, verbosity=1, filler_tokens=None
 ):
 
     few_shot_questions, new_few_shot_indices = select_few_shot_question_for_problem(
@@ -164,13 +181,14 @@ def build_full_prompt(
         few_shot_questions,
         repeat_problem=repeat_problem,
         add_cache_control=add_cache_control and using_default_few_shot_indices,
+        filler_tokens=filler_tokens,
     )
 
     # Build messages
     messages = few_shot_messages + [
         {
             "role": "user",
-            "content": build_user_message(question, repeat_problem=repeat_problem),
+            "content": build_user_message(question, repeat_problem=repeat_problem, filler_tokens=filler_tokens),
         },
         {"role": "assistant", "content": "Answer:"},  # prefill
     ]
