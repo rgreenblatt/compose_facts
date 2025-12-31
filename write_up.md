@@ -1,6 +1,6 @@
 # Frontier LLMs can compose facts without chain-of-thought
 
-In January 2023, Leo Gao hypothesized that future LLMs would continue struggle to compose facts without Chain-of-Thought (CoT).
+In January 2023, Leo Gao hypothesized that future LLMs would continue to struggle to compose facts without Chain-of-Thought (CoT).
 He operationalized this with a [Manifold question](https://manifold.markets/LeoGao/will-a-big-transformer-lm-compose-t) about whether LLMs would be able to answer "What is the sum of the atomic number of uranium and the age at which Euler died?" without Chain-of-Thought (CoT) by 2026.
 Opus 4.5 and Gemini 3 Pro both reliably (128/128) answer this question correctly (at t=1.0) and with some prompting tricks Opus 4 and Sonnet 4 also answer this question correctly all of the time.[^repeat]
 He also operationalized a harder test: whether LLMs can answer "What is the name of the element with an atomic number equal to the sum of the age at which Euler died and the number of faces on a cube?".
@@ -16,10 +16,10 @@ The easier version of this dataset (corresponding to the easier question) consis
 I also test a generalized version of this where we add the result of N 1-hop questions in "Appendix: adding the result of N 1-hop questions".
 The harder version of this dataset (corresponding to the harder question) is of the form "What is the name of the element with an atomic number equal to fact1 + fact2" using the same distribution of facts as the easier dataset, except that I exclude atomic number facts.
 
-On the easier version of this dataset, Opus 4.5 gets 85.7% correct with 5 problem repeats (64.7% without few-shot prompting and without repeats) and Gemini 3 Pro gets 89.0% correct (86.7% without filler tokens, but still with 20-shot prompting).
+On the easier version of this dataset, Opus 4.5 gets 85.7% correct with 5 problem repeats (64.7% without few-shot prompting and without repeats) and Gemini 3 Pro gets 89.0% correct with filler tokens counting to 300 (86.7% without filler tokens, but still with 20-shot prompting).
 For specifically questions of the form "atomic number of X + age at which Y died", Gemini 3 Pro gets 91.5% correct and Opus 4.5 gets 85.1% indicating that the other types of questions are at a similar level of difficulty.
 
-On the harder version of this dataset, Opus 4.5 gets 7.3% correct (with 5 problem repeats) and Gemini 3 Pro gets 36.0% correct (with 300 filler tokens.
+On the harder version of this dataset, Opus 4.5 gets 7.3% correct (with 5 problem repeats) and Gemini 3 Pro gets 36.0% correct (with filler tokens counting to 300).
 Qualitatively, the harder version of my dataset is somewhat harder than Leo Gao's harder question (because "the number of faces on a cube" is particularly small and easy).
 So, Gemini 3 Pro getting that question right ~80% of the time is consistent with the model getting a bit lucky or with that question being a bit easier than the typical question on a distribution where the model gets 36.0% correct.
 
