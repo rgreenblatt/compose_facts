@@ -9,6 +9,8 @@ Opus 4 and Opus 4.5 always get this question wrong at t=1.0 (0/128).
 
 See [my earlier post about filler tokens and repeats](https://www.lesswrong.com/posts/NYzYJ2WoB74E6uj9L/recent-llms-can-use-filler-tokens-or-problem-repeats-to) for discussion of the effects of filler tokens and repeats (and the prompting setup I use).
 
+[^repeat]: Opus 4.5 doesn't require a k-shot prompt or repeats to consistently get this right. I always use a 20-shot prompt for Gemini and Gemini doesn't need anything else to get this problem right.
+
 [^temp]: The original market asked about the response at t=0. However, if Gemini is evaluated using my prompt at t=0, I find that the model consistently reasons which invalidates the measurement. I do find that at t=0.3 (and resampling until the model no longer reasons) the model gets it right 8/8 times.
 
 I also construct a dataset of similar fact-composition questions to these questions.
