@@ -2,7 +2,7 @@
 
 In January 2023, Leo Gao hypothesized that future LLMs would continue to struggle to compose facts without Chain-of-Thought (CoT).
 He operationalized this with a [Manifold question](https://manifold.markets/LeoGao/will-a-big-transformer-lm-compose-t) about whether LLMs would be able to answer "What is the sum of the atomic number of uranium and the age at which Euler died?" without Chain-of-Thought (CoT) by 2026.
-Opus 4.5 and Gemini 3 Pro both reliably (128/128) answer this question correctly (at t=1.0) and with some prompting tricks Opus 4 and Sonnet 4 also answer this question correctly all of the time.[^repeat]
+Opus 4.5 and Gemini 3 Pro both reliably (128/128) answer this question correctly (at t=1.0) and with either a  10-shot prompt or if we repeat the problem 5 times, Opus 4 and Sonnet 4 also answer this question correctly all of the time.[^repeat]
 He also operationalized a harder test: whether LLMs can answer "What is the name of the element with an atomic number equal to the sum of the age at which Euler died and the number of faces on a cube?".
 I find that with filler tokens, Gemini 3 Pro can answer this question 80% of the time (without filler tokens, but still with 20-shot prompting it gets it right 20% of the time).[^temp]
 Opus 4 and Opus 4.5 always get this question wrong at t=1.0 (0/128).
