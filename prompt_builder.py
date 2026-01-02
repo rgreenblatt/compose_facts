@@ -79,7 +79,7 @@ def select_few_shot_question_for_problem(questions, question_index, few_shot_ind
     return new_few_shot_questions, new_few_shot_indices
 
 
-def build_user_message(question, repeat_problem=None, non_numerical: bool | None = None, filler_tokens: int | None = None):
+def build_user_message(question, repeat_problem=None, non_numerical: bool | None = None, filler_tokens: int | None = None, long_prefill: bool = False):
     """Build the user message for a question.
 
     Args:
@@ -87,20 +87,32 @@ def build_user_message(question, repeat_problem=None, non_numerical: bool | None
         repeat_problem: Number of times to repeat the problem (None = 1 time)
         non_numerical: Whether the answer is non-numerical (auto-detected if None)
         filler_tokens: Number of filler tokens (counting 1 to N) to add after the problem
+        long_prefill: If True, use longer prefill format
     """
     # Auto-detect non_numerical from question if not explicitly set
     if isinstance(question, dict) and non_numerical is None:
         non_numerical = question.get("answer_type") == "element_name"
 
-    instruction = (
-        "You will be given a question that requires combining two facts and adding them"
-        + (" and processing this to get a final answer" if non_numerical else "")
-        + ". "
-        + "Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is just the "
-        + ("" if non_numerical else "numerical ")
-        + "answer, nothing else. No explanation, no words, no reasoning, just the "
-        + ("answer." if non_numerical else "number.")
-    )
+    if long_prefill:
+        instruction = (
+            "You will be given a question that requires combining two facts and adding them"
+            + (" and processing this to get a final answer" if non_numerical else "")
+            + ". "
+            + "Answer immediately using the format 'I will now answer immediately with the answer. The answer is [ANSWER]' where [ANSWER] is just the "
+            + ("" if non_numerical else "numerical ")
+            + "answer, nothing else. No explanation, no words, no reasoning, just the "
+            + ("answer." if non_numerical else "number.")
+        )
+    else:
+        instruction = (
+            "You will be given a question that requires combining two facts and adding them"
+            + (" and processing this to get a final answer" if non_numerical else "")
+            + ". "
+            + "Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is just the "
+            + ("" if non_numerical else "numerical ")
+            + "answer, nothing else. No explanation, no words, no reasoning, just the "
+            + ("answer." if non_numerical else "number.")
+        )
 
     if filler_tokens is not None:
         instruction += f" After the question, there will be filler tokens (counting from 1 to {filler_tokens}) to give you extra space to process the problem before answering."
@@ -123,12 +135,12 @@ def build_user_message(question, repeat_problem=None, non_numerical: bool | None
     return out
 
 
-def build_few_shot_messages(few_shot_questions, repeat_problem=None, add_cache_control=True, filler_tokens=None):
+def build_few_shot_messages(few_shot_questions, repeat_problem=None, add_cache_control=True, filler_tokens=None, long_prefill=False):
     """Build the few-shot messages as user/assistant pairs."""
     messages = []
 
     for question in few_shot_questions:
-        user_text = build_user_message(question, repeat_problem=repeat_problem, filler_tokens=filler_tokens)
+        user_text = build_user_message(question, repeat_problem=repeat_problem, filler_tokens=filler_tokens, long_prefill=long_prefill)
 
         messages.append(
             {
@@ -136,10 +148,14 @@ def build_few_shot_messages(few_shot_questions, repeat_problem=None, add_cache_c
                 "content": [{"type": "text", "text": user_text}],
             }
         )
+        if long_prefill:
+            assistant_content = f"I will now answer immediately with the answer. The answer is {question['answer']}"
+        else:
+            assistant_content = f"Answer: {question['answer']}"
         messages.append(
             {
                 "role": "assistant",
-                "content": f"Answer: {question['answer']}",
+                "content": assistant_content,
             }
         )
 
@@ -151,7 +167,7 @@ def build_few_shot_messages(few_shot_questions, repeat_problem=None, add_cache_c
 
 
 def build_full_prompt(
-    questions, question_index, default_few_shot_indices, repeat_problem=None, add_cache_control=True, verbosity=1, filler_tokens=None
+    questions, question_index, default_few_shot_indices, repeat_problem=None, add_cache_control=True, verbosity=1, filler_tokens=None, long_prefill=False
 ):
 
     few_shot_questions, new_few_shot_indices = select_few_shot_question_for_problem(
@@ -182,15 +198,20 @@ def build_full_prompt(
         repeat_problem=repeat_problem,
         add_cache_control=add_cache_control and using_default_few_shot_indices,
         filler_tokens=filler_tokens,
+        long_prefill=long_prefill,
     )
 
     # Build messages
+    if long_prefill:
+        prefill = "I will now answer immediately with the answer. The answer is"
+    else:
+        prefill = "Answer:"
     messages = few_shot_messages + [
         {
             "role": "user",
-            "content": build_user_message(question, repeat_problem=repeat_problem, filler_tokens=filler_tokens),
+            "content": build_user_message(question, repeat_problem=repeat_problem, filler_tokens=filler_tokens, long_prefill=long_prefill),
         },
-        {"role": "assistant", "content": "Answer:"},  # prefill
+        {"role": "assistant", "content": prefill},  # prefill
     ]
 
     return messages

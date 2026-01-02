@@ -100,6 +100,7 @@ async def evaluate_question(
     max_retries=8,
     verbosity=2,
     filler_tokens=None,
+    long_prefill=False,
 ):
     """Evaluate a single question."""
     max_tokens = 50
@@ -116,6 +117,7 @@ async def evaluate_question(
         repeat_problem=repeat_problem,
         add_cache_control=not is_openai_chat and not is_openrouter,
         filler_tokens=filler_tokens,
+        long_prefill=long_prefill,
     )
     question = questions[question_index]
 
@@ -279,6 +281,8 @@ async def evaluate_question(
                 .lower()
                 .removeprefix("answer:")
                 .strip()
+                .removesuffix(".")
+                .strip()
             )
             # Extract first word as the element name
             predicted = cleaned.split()[0] if cleaned.split() else cleaned
@@ -290,6 +294,8 @@ async def evaluate_question(
                     .lower()
                     .replace(",", "")
                     .removeprefix("answer:")
+                    .strip()
+                    .removesuffix(".")
                     .strip()
                 )
                 predicted = int(cleaned.split()[0] if cleaned.split() else cleaned)
@@ -321,6 +327,7 @@ async def run_evaluation(
     k_shot=10,
     verbosity=2,
     filler_tokens=None,
+    long_prefill=False,
 ):
     """Run evaluation on all questions."""
     # Load questions
@@ -345,7 +352,7 @@ async def run_evaluation(
         evaluate_question(
             questions, i, few_shot_indices, semaphore, cache,
             model=model, repeat_problem=repeat_problem, verbosity=verbosity,
-            filler_tokens=filler_tokens
+            filler_tokens=filler_tokens, long_prefill=long_prefill
         )
         for i in range(len(questions))
     ]
@@ -401,6 +408,7 @@ async def run_evaluation(
                 "repeat_problem": repeat_problem,
                 "k_shot": k_shot,
                 "filler_tokens": filler_tokens,
+                "long_prefill": long_prefill,
             },
             "by_type": {t: {"correct": s["correct"], "total": s["total"],
                           "accuracy": s["correct"]/s["total"] if s["total"] > 0 else 0}
@@ -455,6 +463,8 @@ def main():
     parser.add_argument("--verbosity", "-v", type=int, default=2, help="Verbosity level")
     parser.add_argument("--filler-tokens", "-f", type=int, default=None,
                         help="Number of filler tokens (counting 1 to N) to add after the problem")
+    parser.add_argument("--long-prefill", action="store_true",
+                        help="Use longer prefill: 'I will now answer immediately with the answer. The answer is'")
     args = parser.parse_args()
 
     model = parse_model_name(args.model)
@@ -485,6 +495,7 @@ def main():
         k_shot=args.k_shot,
         verbosity=args.verbosity,
         filler_tokens=args.filler_tokens,
+        long_prefill=args.long_prefill,
     ))
 
 

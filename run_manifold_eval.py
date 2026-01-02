@@ -78,6 +78,7 @@ async def run_sample(
     semaphore,
     model,
     max_retries=8,
+    temperature=1.0,
 ):
     max_tokens = 50
 
@@ -111,7 +112,7 @@ async def run_sample(
                                     model=model,
                                     max_completion_tokens=20,
                                     messages=openai_messages,
-                                    temperature=1.0,
+                                    temperature=temperature,
                                     extra_body={
                                         "reasoning": {
                                             "enabled": True,
@@ -147,7 +148,7 @@ async def run_sample(
                                 model=model,
                                 max_tokens=max_tokens,
                                 messages=openai_messages,
-                                temperature=1.0,
+                                temperature=temperature,
                             ),
                             timeout=120.0,
                         )
@@ -159,7 +160,7 @@ async def run_sample(
                             model=model,
                             max_tokens=max_tokens,
                             messages=openai_messages,
-                            temperature=1.0,
+                            temperature=temperature,
                         ),
                         timeout=120.0,
                     )
@@ -171,7 +172,7 @@ async def run_sample(
                             model=model,
                             max_tokens=max_tokens,
                             messages=messages,
-                            temperature=1.0,
+                            temperature=temperature,
                         ),
                         timeout=120.0,
                     )
@@ -221,7 +222,7 @@ def parse_response(response_text, is_int: bool):
         return None
 
 
-async def async_main(messages, n, correct_answer, models=None):
+async def async_main(messages, n, correct_answer, models=None, temperature=1.0):
     DEFAULT_MODELS = [
         # ("claude-3-5-haiku-20241022", "Haiku 3.5"),
         # ("claude-sonnet-4-20250514", "Sonnet 4"),
@@ -232,7 +233,7 @@ async def async_main(messages, n, correct_answer, models=None):
     MODELS = models if models else DEFAULT_MODELS
     semaphore = asyncio.Semaphore(20)  # Limit concurrent requests
 
-    print(f"\nRunning {n} samples per model at temperature=1.0")
+    print(f"\nRunning {n} samples per model at temperature={temperature}")
     print(f"Correct answer: {correct_answer}")
     print("=" * 60)
 
@@ -242,7 +243,7 @@ async def async_main(messages, n, correct_answer, models=None):
         print(f"\n{model_name} ({model_id})...")
 
         # Run n samples concurrently
-        tasks = [run_sample(messages, semaphore, model_id) for _ in range(n)]
+        tasks = [run_sample(messages, semaphore, model_id, temperature=temperature) for _ in range(n)]
         responses = await asyncio.gather(*tasks)
 
         # Parse and score
@@ -321,10 +322,19 @@ def main():
                         help="Number of filler tokens (counting 1 to N) to add after the problem")
     parser.add_argument("--models", "-m", type=str, nargs="+", default=None,
                         help="Models to evaluate (e.g., opus-4-5 gemini-2.5-pro)")
+    parser.add_argument("--long-prefill", action="store_true",
+                        help="Use longer prefill: 'I will now answer immediately with the answer. The answer is'")
+    parser.add_argument("--temperature", "-t", type=float, default=1.0,
+                        help="Temperature for sampling (default: 1.0)")
     args = parser.parse_args()
 
     questions = load_questions(args.input)
     print(f"Loaded {len(questions)} questions from {args.input}")
+
+    if args.harder:
+        correct_answer = None; assert correct_answer is not None, 'fill in correct answer with the right answer before running' # DO NOT COMMIT THE CORRECT ANSWER TO AVOID LEAKAGE!!!
+    else:
+        correct_answer = None; assert correct_answer is not None, 'fill in correct answer with the right answer before running' # DO NOT COMMIT THE CORRECT ANSWER TO AVOID LEAKAGE!!!
 
     # Filter out atomic questions if requested (before selection)
     candidate_questions = questions
@@ -348,7 +358,8 @@ def main():
         few_shot_questions,
         repeat_problem=args.repeat,
         add_cache_control=False,
-        filler_tokens=args.filler_tokens
+        filler_tokens=args.filler_tokens,
+        long_prefill=args.long_prefill
     )
 
     # Assert no answer leakage in few-shot prompt
@@ -356,18 +367,21 @@ def main():
 
     # The original Manifold market question
     if args.harder:
-        assert "cube" not in few_shot_str, "Few-shot prompt contains 'cube' - answer leakage!"
-        assert "euler" not in few_shot_str, "Few-shot prompt contains 'euler' - answer leakage!"
+        assert "cube" not in few_shot_str.lower(), "Few-shot prompt contains 'cube' - answer leakage!"
+        assert "euler" not in few_shot_str.lower(), "Few-shot prompt contains 'euler' - answer leakage!"
         question_text  = "What is the name of the element with an atomic number equal to the sum of the age at which Euler died and the number of faces on a cube?"
-        correct_answer = None; assert correct_answer is not None, 'fill in correct answer with the right answer before running' # DO NOT COMMIT THE CORRECT ANSWER TO AVOID LEAKAGE!!!
-        assert correct_answer not in few_shot_str, "Few-shot prompt has answer leakage!"
+        assert correct_answer not in few_shot_str.lower(), "Few-shot prompt has answer leakage!"
     else:
-        assert "uranium" not in few_shot_str, "Few-shot prompt contains 'uranium' - answer leakage!"
-        assert "euler" not in few_shot_str, "Few-shot prompt contains 'euler' - answer leakage!"
+        assert "uranium" not in few_shot_str.lower(), "Few-shot prompt contains 'uranium' - answer leakage!"
+        assert "euler" not in few_shot_str.lower(), "Few-shot prompt contains 'euler' - answer leakage!"
         question_text = "What is the sum of the atomic number of uranium and the age at which Euler died?"
-        correct_answer = None; assert correct_answer is not None, 'fill in correct answer with the right answer before running' # DO NOT COMMIT THE CORRECT ANSWER TO AVOID LEAKAGE!!!
+
 
     # Build messages
+    if args.long_prefill:
+        prefill = "I will now answer immediately with the answer. The answer is"
+    else:
+        prefill = "Answer:"
     messages = few_shot_messages + [
         {
             "role": "user",
@@ -375,10 +389,11 @@ def main():
                 {"question": question_text},
                 repeat_problem=args.repeat,
                 non_numerical=args.harder,
-                filler_tokens=args.filler_tokens
+                filler_tokens=args.filler_tokens,
+                long_prefill=args.long_prefill
             ),
         },
-        {"role": "assistant", "content": "Answer:"},  # prefill
+        {"role": "assistant", "content": prefill},  # prefill
     ]
 
     print(f"Question: {question_text}")
@@ -388,13 +403,30 @@ def main():
     print("Full prompt:")
     print(json.dumps(messages, indent=2))
 
+    # Save prompt to file in User:/Assistant: format
+    def format_prompt_for_file(messages):
+        lines = []
+        for msg in messages:
+            role = msg["role"].capitalize()
+            content = msg["content"]
+            if isinstance(content, list):
+                content = content[0]["text"]
+            lines.append(f"{role}: {content}")
+        return "\n\n".join(lines)
+
+    prompt_text = format_prompt_for_file(messages)
+    prompt_filename = "prompt.txt"
+    with open(prompt_filename, "w") as f:
+        f.write(prompt_text)
+    print(f"\nPrompt saved to {prompt_filename}")
+
     # Parse model names if provided
     models = None
     if args.models:
         models = [(parse_model_name(m), m) for m in args.models]
         print(f"\nUsing models: {[m[0] for m in models]}")
 
-    asyncio.run(async_main(messages, n=args.count, correct_answer=correct_answer, models=models))
+    asyncio.run(async_main(messages, n=args.count, correct_answer=correct_answer, models=models, temperature=args.temperature))
 
 
 if __name__ == "__main__":
